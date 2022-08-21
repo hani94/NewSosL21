@@ -3,11 +3,11 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="rt">
+        <entry key="codelib">
           <value>
             <Library>
-              <option name="name" value="rt" />
-              <option name="path" value="$PROJECT_DIR$/lib/lib/de.itemis.mps.extensions" />
+              <option name="name" value="codelib" />
+              <option name="path" value="$PROJECT_DIR$/libcode/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>
