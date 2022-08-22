@@ -9,22 +9,30 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int BinaryExpression = 0;
-  public static final int DivExpression = 1;
-  public static final int EmptyStatement = 2;
-  public static final int ExpStatement = 3;
-  public static final int Expression = 4;
-  public static final int IntegerLiteral = 5;
-  public static final int Istatement = 6;
-  public static final int Main = 7;
-  public static final int MinusExpression = 8;
-  public static final int MulExpression = 9;
-  public static final int PlusExpression = 10;
-  public static final int Variable = 11;
+  public static final int BBooleanType = 0;
+  public static final int BIntegerType = 1;
+  public static final int BaseType = 2;
+  public static final int BinaryExpression = 3;
+  public static final int BooleanLiteral = 4;
+  public static final int DivExpression = 5;
+  public static final int EmptyStatement = 6;
+  public static final int ExpStatement = 7;
+  public static final int Expression = 8;
+  public static final int IntegerLiteral = 9;
+  public static final int Istatement = 10;
+  public static final int Main = 11;
+  public static final int MinusExpression = 12;
+  public static final int MulExpression = 13;
+  public static final int PlusExpression = 14;
+  public static final int Variable = 15;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x82c3f21d731742c2L, 0xa9382fa615afecaaL);
+    builder.put(0x3d8a40f980199c23L, BBooleanType);
+    builder.put(0x3d8a40f980199c22L, BIntegerType);
+    builder.put(0x3d8a40f980199c14L, BaseType);
     builder.put(0x2bba03e50417871dL, BinaryExpression);
+    builder.put(0xe7bf19b9812c481L, BooleanLiteral);
     builder.put(0x2bba03e5041803c2L, DivExpression);
     builder.put(0x9729f9cf414b63dL, EmptyStatement);
     builder.put(0x2bba03e5041c9566L, ExpStatement);

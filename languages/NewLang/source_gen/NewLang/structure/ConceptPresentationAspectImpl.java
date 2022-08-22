@@ -9,7 +9,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_BBooleanType;
+  private ConceptPresentation props_BIntegerType;
+  private ConceptPresentation props_BaseType;
   private ConceptPresentation props_BinaryExpression;
+  private ConceptPresentation props_BooleanLiteral;
   private ConceptPresentation props_DivExpression;
   private ConceptPresentation props_EmptyStatement;
   private ConceptPresentation props_ExpStatement;
@@ -27,12 +31,39 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.BBooleanType:
+        if (props_BBooleanType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("bool");
+          props_BBooleanType = cpb.create();
+        }
+        return props_BBooleanType;
+      case LanguageConceptSwitch.BIntegerType:
+        if (props_BIntegerType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("int");
+          props_BIntegerType = cpb.create();
+        }
+        return props_BIntegerType;
+      case LanguageConceptSwitch.BaseType:
+        if (props_BaseType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_BaseType = cpb.create();
+        }
+        return props_BaseType;
       case LanguageConceptSwitch.BinaryExpression:
         if (props_BinaryExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_BinaryExpression = cpb.create();
         }
         return props_BinaryExpression;
+      case LanguageConceptSwitch.BooleanLiteral:
+        if (props_BooleanLiteral == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BooleanLiteral");
+          props_BooleanLiteral = cpb.create();
+        }
+        return props_BooleanLiteral;
       case LanguageConceptSwitch.DivExpression:
         if (props_DivExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -2,8 +2,7 @@
 <model ref="r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -75,7 +74,14 @@
       <property role="IQ2ns" value="680781990145263827" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
-      <ref role="20lvS9" node="_MBTNO5Ps2" resolve="IntegerLiteral" />
+      <ref role="20lvS9" node="2IU0Yk45M$N" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3QagfA05Xbc" role="1TKVEi">
+      <property role="IQ2ns" value="4434428223439753932" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3QagfA06pKk" resolve="BaseType" />
     </node>
   </node>
   <node concept="PlHQZ" id="_MBTNO5boS">
@@ -167,6 +173,34 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2IU0Yk45M$N" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="TVWpIo4Gi1">
+    <property role="EcuMT" value="1043693389239993473" />
+    <property role="TrG5h" value="BooleanLiteral" />
+    <ref role="1TJDcQ" node="2IU0Yk45M$N" resolve="Expression" />
+    <node concept="1TJgyi" id="TVWpIo4Gi2" role="1TKVEl">
+      <property role="IQ2nx" value="1043693389239993474" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3QagfA06pKk">
+    <property role="EcuMT" value="4434428223439870996" />
+    <property role="TrG5h" value="BaseType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="3QagfA06pKy">
+    <property role="EcuMT" value="4434428223439871010" />
+    <property role="TrG5h" value="BIntegerType" />
+    <property role="34LRSv" value="int" />
+    <ref role="1TJDcQ" node="3QagfA06pKk" resolve="BaseType" />
+  </node>
+  <node concept="1TIwiD" id="3QagfA06pKz">
+    <property role="EcuMT" value="4434428223439871011" />
+    <property role="TrG5h" value="BBooleanType" />
+    <property role="34LRSv" value="bool" />
+    <ref role="1TJDcQ" node="3QagfA06pKk" resolve="BaseType" />
   </node>
 </model>
 
