@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EmptyStatement;
   private ConceptPresentation props_ExpStatement;
   private ConceptPresentation props_Expression;
+  private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_IntegerLiteral;
   private ConceptPresentation props_Istatement;
   private ConceptPresentation props_Main;
@@ -93,6 +94,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Expression = cpb.create();
         }
         return props_Expression;
+      case LanguageConceptSwitch.IfStatement:
+        if (props_IfStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("IfStatement");
+          props_IfStatement = cpb.create();
+        }
+        return props_IfStatement;
       case LanguageConceptSwitch.IntegerLiteral:
         if (props_IntegerLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

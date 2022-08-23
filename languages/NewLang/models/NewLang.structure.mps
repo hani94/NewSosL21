@@ -17,7 +17,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -216,10 +218,38 @@
   <node concept="PlHQZ" id="3QagfA0lErO">
     <property role="EcuMT" value="4434428223443871476" />
     <property role="TrG5h" value="StatementContainer" />
+    <node concept="PrWs8" id="56MAyBR6Hcl" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3QagfA0lEue">
     <property role="TrG5h" value="Istatement" />
     <property role="EcuMT" value="680781990145078840" />
+  </node>
+  <node concept="1TIwiD" id="56MAyBR4uSn">
+    <property role="EcuMT" value="5886937167956143639" />
+    <property role="TrG5h" value="IfStatement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="56MAyBR4uSo" role="1TKVEi">
+      <property role="IQ2ns" value="5886937167956143640" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2IU0Yk45M$N" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="56MAyBR4uSs" role="1TKVEi">
+      <property role="IQ2ns" value="5886937167956143644" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3QagfA0lEue" resolve="Istatement" />
+    </node>
+    <node concept="PrWs8" id="56MAyBR4uSq" role="PzmwI">
+      <ref role="PrY4T" node="3QagfA0lEue" resolve="Istatement" />
+    </node>
+    <node concept="PrWs8" id="56MAyBR5_hR" role="PzmwI">
+      <ref role="PrY4T" node="3QagfA0lErO" resolve="StatementContainer" />
+    </node>
   </node>
 </model>
 

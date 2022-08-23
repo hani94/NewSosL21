@@ -26,6 +26,11 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -294,6 +299,56 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="56MAyBR4uSA">
+    <ref role="1XX52x" to="cln3:56MAyBR4uSn" resolve="IfStatement" />
+    <node concept="3EZMnI" id="56MAyBR4uTx" role="2wV5jI">
+      <node concept="3F0ifn" id="56MAyBR4uTC" role="3EZMnx">
+        <property role="3F0ifm" value="if(" />
+      </node>
+      <node concept="3F1sOY" id="56MAyBR4uTI" role="3EZMnx">
+        <ref role="1NtTu8" to="cln3:56MAyBR4uSo" resolve="condition" />
+      </node>
+      <node concept="3F0ifn" id="56MAyBR4uTQ" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F0ifn" id="56MAyBR4uU0" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="ljvvj" id="56MAyBR4uV3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="56MAyBR510e" role="3EZMnx">
+        <ref role="1NtTu8" to="cln3:56MAyBR4uSs" resolve="body" />
+        <node concept="l2Vlx" id="56MAyBR510g" role="2czzBx" />
+        <node concept="lj46D" id="56MAyBR510q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="56MAyBR510M" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="4$FPG" id="56MAyBR510P" role="4_6I_">
+          <node concept="3clFbS" id="56MAyBR510Q" role="2VODD2">
+            <node concept="3clFbF" id="56MAyBR512Q" role="3cqZAp">
+              <node concept="2ShNRf" id="56MAyBR512O" role="3clFbG">
+                <node concept="3zrR0B" id="56MAyBR52ES" role="2ShVmc">
+                  <node concept="3Tqbb2" id="56MAyBR52EU" role="3zrR0E">
+                    <ref role="ehGHo" to="cln3:_MBTNO5boX" resolve="EmptyStatement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="56MAyBR4uUx" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="56MAyBR4uV7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="56MAyBR4uT$" role="2iSdaV" />
     </node>
   </node>
 </model>

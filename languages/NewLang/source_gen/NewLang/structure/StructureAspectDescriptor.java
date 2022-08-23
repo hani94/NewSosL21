@@ -22,6 +22,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEmptyStatement = createDescriptorForEmptyStatement();
   /*package*/ final ConceptDescriptor myConceptExpStatement = createDescriptorForExpStatement();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
+  /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
   /*package*/ final ConceptDescriptor myConceptIntegerLiteral = createDescriptorForIntegerLiteral();
   /*package*/ final ConceptDescriptor myConceptIstatement = createDescriptorForIstatement();
   /*package*/ final ConceptDescriptor myConceptMain = createDescriptorForMain();
@@ -45,7 +46,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBBooleanType, myConceptBIntegerType, myConceptBaseType, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptDivExpression, myConceptEmptyStatement, myConceptExpStatement, myConceptExpression, myConceptIntegerLiteral, myConceptIstatement, myConceptMain, myConceptMinusExpression, myConceptMulExpression, myConceptPlusExpression, myConceptStatementContainer, myConceptVariable, myConceptVariableReference);
+    return Arrays.asList(myConceptBBooleanType, myConceptBIntegerType, myConceptBaseType, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptDivExpression, myConceptEmptyStatement, myConceptExpStatement, myConceptExpression, myConceptIfStatement, myConceptIntegerLiteral, myConceptIstatement, myConceptMain, myConceptMinusExpression, myConceptMulExpression, myConceptPlusExpression, myConceptStatementContainer, myConceptVariable, myConceptVariableReference);
   }
 
   @Override
@@ -70,6 +71,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptExpStatement;
       case LanguageConceptSwitch.Expression:
         return myConceptExpression;
+      case LanguageConceptSwitch.IfStatement:
+        return myConceptIfStatement;
       case LanguageConceptSwitch.IntegerLiteral:
         return myConceptIntegerLiteral;
       case LanguageConceptSwitch.Istatement:
@@ -176,6 +179,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIfStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLang", "IfStatement", 0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f711ee17L);
+    b.class_(false, false, false);
+    b.parent(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L);
+    b.parent(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f98056a6f4L);
+    b.origin("r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)/5886937167956143639");
+    b.version(2);
+    b.aggregate("condition", 0x51b29a29f711ee18L).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e504172933L).optional(false).ordered(true).multiple(false).origin("5886937167956143640").done();
+    b.aggregate("body", 0x51b29a29f711ee1cL).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L).optional(true).ordered(true).multiple(true).origin("5886937167956143644").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIntegerLiteral() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLang", "IntegerLiteral", 0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf4175702L);
     b.class_(false, false, false);
@@ -233,6 +247,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForStatementContainer() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLang", "StatementContainer", 0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f98056a6f4L);
     b.interface_();
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)/4434428223443871476");
     b.version(2);
     return b.create();

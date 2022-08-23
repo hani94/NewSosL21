@@ -18,15 +18,16 @@ public final class LanguageConceptSwitch {
   public static final int EmptyStatement = 6;
   public static final int ExpStatement = 7;
   public static final int Expression = 8;
-  public static final int IntegerLiteral = 9;
-  public static final int Istatement = 10;
-  public static final int Main = 11;
-  public static final int MinusExpression = 12;
-  public static final int MulExpression = 13;
-  public static final int PlusExpression = 14;
-  public static final int StatementContainer = 15;
-  public static final int Variable = 16;
-  public static final int VariableReference = 17;
+  public static final int IfStatement = 9;
+  public static final int IntegerLiteral = 10;
+  public static final int Istatement = 11;
+  public static final int Main = 12;
+  public static final int MinusExpression = 13;
+  public static final int MulExpression = 14;
+  public static final int PlusExpression = 15;
+  public static final int StatementContainer = 16;
+  public static final int Variable = 17;
+  public static final int VariableReference = 18;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x82c3f21d731742c2L, 0xa9382fa615afecaaL);
@@ -39,6 +40,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x9729f9cf414b63dL, EmptyStatement);
     builder.put(0x2bba03e5041c9566L, ExpStatement);
     builder.put(0x2bba03e504172933L, Expression);
+    builder.put(0x51b29a29f711ee17L, IfStatement);
     builder.put(0x9729f9cf4175702L, IntegerLiteral);
     builder.put(0x9729f9cf414b638L, Istatement);
     builder.put(0x1686c41a5d838c0eL, Main);
