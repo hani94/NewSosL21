@@ -29,6 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMulExpression = createDescriptorForMulExpression();
   /*package*/ final ConceptDescriptor myConceptPlusExpression = createDescriptorForPlusExpression();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
+  /*package*/ final ConceptDescriptor myConceptVariableReference = createDescriptorForVariableReference();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -43,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBBooleanType, myConceptBIntegerType, myConceptBaseType, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptDivExpression, myConceptEmptyStatement, myConceptExpStatement, myConceptExpression, myConceptIntegerLiteral, myConceptIstatement, myConceptMain, myConceptMinusExpression, myConceptMulExpression, myConceptPlusExpression, myConceptVariable);
+    return Arrays.asList(myConceptBBooleanType, myConceptBIntegerType, myConceptBaseType, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptDivExpression, myConceptEmptyStatement, myConceptExpStatement, myConceptExpression, myConceptIntegerLiteral, myConceptIstatement, myConceptMain, myConceptMinusExpression, myConceptMulExpression, myConceptPlusExpression, myConceptVariable, myConceptVariableReference);
   }
 
   @Override
@@ -82,6 +83,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPlusExpression;
       case LanguageConceptSwitch.Variable:
         return myConceptVariable;
+      case LanguageConceptSwitch.VariableReference:
+        return myConceptVariableReference;
       default:
         return null;
     }
@@ -232,6 +235,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("value", 0x9729f9cf41788d3L).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e504172933L).optional(true).ordered(true).multiple(false).origin("680781990145263827").done();
     b.aggregate("type", 0x3d8a40f98017d2ccL).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f980199c14L).optional(false).ordered(true).multiple(false).origin("4434428223439753932").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVariableReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLang", "VariableReference", 0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f9803cffa2L);
+    b.class_(false, false, false);
+    b.super_("NewLang.structure.Expression", 0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e504172933L);
+    b.origin("r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)/4434428223442190242");
+    b.version(2);
+    b.associate("var", 0x3d8a40f9803cffa3L).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414ac3aL).optional(false).origin("4434428223442190243").done();
     return b.create();
   }
 }

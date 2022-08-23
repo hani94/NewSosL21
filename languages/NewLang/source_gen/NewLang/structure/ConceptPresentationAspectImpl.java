@@ -25,6 +25,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MulExpression;
   private ConceptPresentation props_PlusExpression;
   private ConceptPresentation props_Variable;
+  private ConceptPresentation props_VariableReference;
 
   @Override
   @Nullable
@@ -139,6 +140,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Variable = cpb.create();
         }
         return props_Variable;
+      case LanguageConceptSwitch.VariableReference:
+        if (props_VariableReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f9803cffa2L, 0x3d8a40f9803cffa3L, "var", "", "");
+          props_VariableReference = cpb.create();
+        }
+        return props_VariableReference;
     }
     return null;
   }

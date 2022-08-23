@@ -3,11 +3,19 @@
   <persistence version="9" />
   <languages>
     <use id="82c3f21d-7317-42c2-a938-2fa615afecaa" name="NewLang" version="-1" />
+    <use id="e1e1e1ca-38f5-4b3a-bc4e-629f7e2e7b1b" name="TestLanguage" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="e1e1e1ca-38f5-4b3a-bc4e-629f7e2e7b1b" name="TestLanguage">
+      <concept id="4434428223441639892" name="TestLanguage.structure.TestSuite" flags="ng" index="2XJH$H">
+        <child id="4434428223441639898" name="tests" index="2XJH$z" />
+      </concept>
+      <concept id="4434428223441639895" name="TestLanguage.structure.TestCase" flags="ng" index="2XJH$I">
+        <child id="4434428223441639981" name="content" index="2XJHFk" />
+      </concept>
+    </language>
     <language id="82c3f21d-7317-42c2-a938-2fa615afecaa" name="NewLang">
-      <concept id="1043693389239993473" name="NewLang.structure.BooleanLiteral" flags="ng" index="2mqjkq" />
       <concept id="3150835171450160066" name="NewLang.structure.DivExpression" flags="ng" index="JCw0B" />
       <concept id="3150835171450128157" name="NewLang.structure.BinaryExpression" flags="ng" index="JFojS">
         <child id="3150835171450133260" name="left" index="JFpzD" />
@@ -119,43 +127,11 @@
         </node>
       </node>
     </node>
-    <node concept="3XpzeA" id="3QagfA06pII" role="3XpyAE">
-      <property role="TrG5h" value="f" />
-      <node concept="3Xpsyu" id="3QagfA06pKf" role="3Xphtf">
-        <property role="3Xpu57" value="2" />
-      </node>
-      <node concept="2X$XNr" id="3QagfA06Q_Q" role="2XBp8P" />
-    </node>
-    <node concept="3XpzeA" id="3QagfA07kGm" role="3XpyAE">
-      <property role="TrG5h" value="fv = 5" />
-      <node concept="2X$XNr" id="3QagfA07kGY" role="2XBp8P" />
-    </node>
-    <node concept="3XpzeA" id="3QagfA07kIe" role="3XpyAE">
-      <property role="TrG5h" value="r " />
-      <node concept="2X$XNr" id="3QagfA07kIT" role="2XBp8P" />
-    </node>
-    <node concept="3XpzeA" id="3QagfA07N6g" role="3XpyAE">
-      <property role="TrG5h" value="dg " />
-      <node concept="2X$XNr" id="3QagfA07N6W" role="2XBp8P" />
-      <node concept="2mqjkq" id="3QagfA08QFX" role="3Xphtf" />
-    </node>
     <node concept="3XpzeA" id="3QagfA08QGH" role="3XpyAE">
       <property role="TrG5h" value="dd" />
       <node concept="2X$XNr" id="3QagfA08QHs" role="2XBp8P" />
       <node concept="3Xpsyu" id="3QagfA08QHB" role="3Xphtf">
         <property role="3Xpu57" value="4" />
-      </node>
-    </node>
-    <node concept="3XpzeA" id="3QagfA09jZB" role="3XpyAE">
-      <property role="TrG5h" value="gr" />
-      <node concept="2X$XNq" id="3QagfA09k0t" role="2XBp8P" />
-      <node concept="JFuqd" id="3QagfA0agbX" role="3Xphtf">
-        <node concept="3Xpsyu" id="3QagfA0agcm" role="JFpzD">
-          <property role="3Xpu57" value="4" />
-        </node>
-        <node concept="3Xpsyu" id="3QagfA0agcD" role="JFpzF">
-          <property role="3Xpu57" value="4" />
-        </node>
       </node>
     </node>
     <node concept="3XpyAx" id="3QagfA09k18" role="3XpyAE" />
@@ -182,8 +158,21 @@
       </node>
     </node>
     <node concept="3XpzeA" id="3QagfA0d8v_" role="3XpyAE">
-      <property role="TrG5h" value="s" />
+      <property role="TrG5h" value="ssadsadsadsad23" />
       <node concept="2X$XNr" id="3QagfA0d8vT" role="2XBp8P" />
+    </node>
+    <node concept="3XpyAx" id="3QagfA0hTCj" role="3XpyAE" />
+    <node concept="3XpyAx" id="3QagfA0j3TI" role="3XpyAE" />
+    <node concept="3XpyAx" id="3QagfA0it3x" role="3XpyAE" />
+  </node>
+  <node concept="2XJH$H" id="3QagfA0e6yK">
+    <property role="TrG5h" value="t" />
+    <node concept="2XJH$I" id="3QagfA0e6yL" role="2XJH$z">
+      <node concept="3XpzeA" id="3QagfA0eaOG" role="2XJHFk">
+        <property role="TrG5h" value="dsad" />
+        <node concept="2X$XNq" id="3QagfA0eaOT" role="2XBp8P" />
+      </node>
+      <node concept="3XpyAx" id="3QagfA0ecjJ" role="2XJHFk" />
     </node>
   </node>
 </model>

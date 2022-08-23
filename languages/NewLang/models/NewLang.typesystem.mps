@@ -414,5 +414,35 @@
       <ref role="1YaFvo" to="cln3:_MBTNO5aKU" resolve="Variable" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3QagfA0gnAD">
+    <property role="TrG5h" value="typeof_VariableReference" />
+    <node concept="3clFbS" id="3QagfA0gnAE" role="18ibNy">
+      <node concept="1Z5TYs" id="3QagfA0gnVW" role="3cqZAp">
+        <node concept="mw_s8" id="3QagfA0gnWg" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3QagfA0gnWc" role="mwGJk">
+            <node concept="2OqwBi" id="3QagfA0go5$" role="1Z2MuG">
+              <node concept="1YBJjd" id="3QagfA0gnWx" role="2Oq$k0">
+                <ref role="1YBMHb" node="3QagfA0gnAG" resolve="variableReference" />
+              </node>
+              <node concept="3TrEf2" id="3QagfA0gowH" role="2OqNvi">
+                <ref role="3Tt5mk" to="cln3:3QagfA0ffYz" resolve="var" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3QagfA0gnVZ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3QagfA0gnAK" role="mwGJk">
+            <node concept="1YBJjd" id="3QagfA0gnCE" role="1Z2MuG">
+              <ref role="1YBMHb" node="3QagfA0gnAG" resolve="variableReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3QagfA0gnAG" role="1YuTPh">
+      <property role="TrG5h" value="variableReference" />
+      <ref role="1YaFvo" to="cln3:3QagfA0ffYy" resolve="VariableReference" />
+    </node>
+  </node>
 </model>
 
