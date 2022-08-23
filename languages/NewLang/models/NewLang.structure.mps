@@ -110,7 +110,7 @@
     <property role="EcuMT" value="3150835171450104115" />
     <property role="TrG5h" value="Expression" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2IU0Yk46u3v" role="PzmwI">
       <ref role="PrY4T" node="3QagfA0lEue" resolve="Istatement" />
     </node>
@@ -162,7 +162,7 @@
   <node concept="1TIwiD" id="2IU0Yk479lA">
     <property role="EcuMT" value="3150835171450459494" />
     <property role="TrG5h" value="ExpStatement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2IU0Yk47a_l" role="1TKVEi">
       <property role="IQ2ns" value="3150835171450464597" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -188,7 +188,7 @@
     <property role="EcuMT" value="4434428223439870996" />
     <property role="TrG5h" value="BaseType" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3QagfA06pKy">
     <property role="EcuMT" value="4434428223439871010" />

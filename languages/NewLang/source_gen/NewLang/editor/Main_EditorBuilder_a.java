@@ -121,6 +121,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     AbstractCellListHandler handler = new contentListHandler_w8a4ih_c0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_content");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.EDITABLE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }

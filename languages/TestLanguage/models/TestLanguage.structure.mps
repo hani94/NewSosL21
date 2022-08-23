@@ -42,7 +42,7 @@
     <property role="EcuMT" value="4434428223441639892" />
     <property role="TrG5h" value="TestSuite" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QagfA0d9Bl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -57,7 +57,7 @@
   <node concept="1TIwiD" id="3QagfA0d9Bn">
     <property role="EcuMT" value="4434428223441639895" />
     <property role="TrG5h" value="TestCase" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QagfA0d9Bo" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -76,7 +76,7 @@
     <property role="EcuMT" value="4434428223441913078" />
     <property role="TrG5h" value="AssertStatement" />
     <property role="34LRSv" value="assert" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QagfA0ecjR" role="PzmwI">
       <ref role="PrY4T" to="cln3:3QagfA0lEue" resolve="Istatement" />
     </node>
