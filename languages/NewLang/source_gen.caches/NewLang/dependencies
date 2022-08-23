@@ -51,6 +51,7 @@
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
   <dependency className="NewLang.Language">
     <classNode dependClassName="NewLang.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="NewLang.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="NewLang.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="NewLang.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="NewLang.structure.StructureAspectDescriptor" />
@@ -65,6 +66,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />

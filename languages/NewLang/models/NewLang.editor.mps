@@ -80,6 +80,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695491669778" name="leftAssociative" index="2EmT7a" />
         <child id="8207263695491670784" name="priority" index="2EmURo" />
@@ -128,11 +131,16 @@
       <node concept="3F0A7n" id="2IU0Yk45ncJ" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="3QagfA08n3F" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="3QagfA08n3V" role="3EZMnx">
-        <ref role="1NtTu8" to="cln3:_MBTNO5Szj" resolve="value" />
+      <node concept="_tjkj" id="3QagfA0cEdk" role="3EZMnx">
+        <node concept="3EZMnI" id="3QagfA0cEdv" role="_tjki">
+          <node concept="3F0ifn" id="3QagfA0cEdA" role="3EZMnx">
+            <property role="3F0ifm" value="=" />
+          </node>
+          <node concept="3F1sOY" id="3QagfA0cEdK" role="3EZMnx">
+            <ref role="1NtTu8" to="cln3:_MBTNO5Szj" resolve="value" />
+          </node>
+          <node concept="2iRfu4" id="3QagfA0cEdy" role="2iSdaV" />
+        </node>
       </node>
     </node>
   </node>
