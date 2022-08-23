@@ -67,6 +67,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TestLanguage", "TestCase", 0xe1e1e1ca38f54b3aL, 0xbc4e629f7e2e7b1bL, 0x3d8a40f9803499d7L);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f98056a6f4L);
     b.origin("r:dc730a7c-7762-464e-9715-6f8a9bb39c74(TestLanguage.structure)/4434428223441639895");
     b.version(2);
     b.aggregate("content", 0x3d8a40f980349a2dL).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L).optional(true).ordered(true).multiple(true).origin("4434428223441639981").done();

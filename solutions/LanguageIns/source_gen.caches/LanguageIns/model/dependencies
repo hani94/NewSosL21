@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <uses language="l:82c3f21d-7317-42c2-a938-2fa615afecaa:NewLang" />
+  <uses language="l:e1e1e1ca-38f5-4b3a-bc4e-629f7e2e7b1b:TestLanguage" />
 </dependenciesRoot>
 

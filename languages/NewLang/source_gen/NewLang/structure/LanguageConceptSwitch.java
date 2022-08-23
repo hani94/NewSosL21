@@ -24,8 +24,9 @@ public final class LanguageConceptSwitch {
   public static final int MinusExpression = 12;
   public static final int MulExpression = 13;
   public static final int PlusExpression = 14;
-  public static final int Variable = 15;
-  public static final int VariableReference = 16;
+  public static final int StatementContainer = 15;
+  public static final int Variable = 16;
+  public static final int VariableReference = 17;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x82c3f21d731742c2L, 0xa9382fa615afecaaL);
@@ -44,6 +45,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2bba03e50417e568L, MinusExpression);
     builder.put(0x2bba03e50417f990L, MulExpression);
     builder.put(0x2bba03e50417da21L, PlusExpression);
+    builder.put(0x3d8a40f98056a6f4L, StatementContainer);
     builder.put(0x9729f9cf414ac3aL, Variable);
     builder.put(0x3d8a40f9803cffa2L, VariableReference);
     myIndex = builder.seal();

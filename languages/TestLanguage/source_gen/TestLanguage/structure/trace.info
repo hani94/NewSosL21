@@ -15,7 +15,7 @@
       <unit at="10,0,32,0" name="TestLanguage.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,85,0" name="TestLanguage.structure.StructureAspectDescriptor" />
+      <unit at="14,0,86,0" name="TestLanguage.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:dc730a7c-7762-464e-9715-6f8a9bb39c74(TestLanguage.structure)/4434428223441639892">
@@ -38,19 +38,19 @@
     <file name="StructureAspectDescriptor.java">
       <node id="4434428223441639892" at="17,0,18,0" concept="1" trace="myConceptTestSuite" />
       <node id="4434428223441639892" at="44,43,45,34" concept="4" />
-      <node id="4434428223441639892" at="75,67,76,156" concept="3" />
-      <node id="4434428223441639892" at="76,156,77,33" concept="0" />
-      <node id="4434428223441639892" at="77,33,78,71" concept="0" />
-      <node id="4434428223441639892" at="78,71,79,99" concept="0" />
-      <node id="4434428223441639892" at="79,99,80,17" concept="0" />
-      <node id="4434428223441639898" at="80,17,81,197" concept="0" />
-      <node id="4434428223441639892" at="81,197,82,22" concept="4" />
-      <node id="4434428223441639892" at="75,0,84,0" concept="6" trace="createDescriptorForTestSuite#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4434428223441639892" at="76,67,77,156" concept="3" />
+      <node id="4434428223441639892" at="77,156,78,33" concept="0" />
+      <node id="4434428223441639892" at="78,33,79,71" concept="0" />
+      <node id="4434428223441639892" at="79,71,80,99" concept="0" />
+      <node id="4434428223441639892" at="80,99,81,17" concept="0" />
+      <node id="4434428223441639898" at="81,17,82,197" concept="0" />
+      <node id="4434428223441639892" at="82,197,83,22" concept="4" />
+      <node id="4434428223441639892" at="76,0,85,0" concept="6" trace="createDescriptorForTestSuite#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4434428223441639892" at="44,43,45,34" />
-      <scope id="4434428223441639892" at="75,67,82,22">
+      <scope id="4434428223441639892" at="76,67,83,22">
         <var name="b" id="4434428223441639892" />
       </scope>
-      <scope id="4434428223441639892" at="75,0,84,0" />
+      <scope id="4434428223441639892" at="76,0,85,0" />
     </file>
   </root>
   <root nodeRef="r:dc730a7c-7762-464e-9715-6f8a9bb39c74(TestLanguage.structure)/4434428223441639895">
@@ -76,16 +76,17 @@
       <node id="4434428223441639895" at="66,66,67,155" concept="3" />
       <node id="4434428223441639895" at="67,155,68,34" concept="0" />
       <node id="4434428223441639895" at="68,34,69,71" concept="0" />
-      <node id="4434428223441639895" at="69,71,70,99" concept="0" />
-      <node id="4434428223441639895" at="70,99,71,17" concept="0" />
-      <node id="4434428223441639981" at="71,17,72,198" concept="0" />
-      <node id="4434428223441639895" at="72,198,73,22" concept="4" />
-      <node id="4434428223441639895" at="66,0,75,0" concept="6" trace="createDescriptorForTestCase#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4434428223441639895" at="69,71,70,76" concept="0" />
+      <node id="4434428223441639895" at="70,76,71,99" concept="0" />
+      <node id="4434428223441639895" at="71,99,72,17" concept="0" />
+      <node id="4434428223441639981" at="72,17,73,198" concept="0" />
+      <node id="4434428223441639895" at="73,198,74,22" concept="4" />
+      <node id="4434428223441639895" at="66,0,76,0" concept="6" trace="createDescriptorForTestCase#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4434428223441639895" at="42,42,43,33" />
-      <scope id="4434428223441639895" at="66,66,73,22">
+      <scope id="4434428223441639895" at="66,66,74,22">
         <var name="b" id="4434428223441639895" />
       </scope>
-      <scope id="4434428223441639895" at="66,0,75,0" />
+      <scope id="4434428223441639895" at="66,0,76,0" />
     </file>
   </root>
   <root nodeRef="r:dc730a7c-7762-464e-9715-6f8a9bb39c74(TestLanguage.structure)/4434428223441913078">

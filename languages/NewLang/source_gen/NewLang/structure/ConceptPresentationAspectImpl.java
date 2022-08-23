@@ -24,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MinusExpression;
   private ConceptPresentation props_MulExpression;
   private ConceptPresentation props_PlusExpression;
+  private ConceptPresentation props_StatementContainer;
   private ConceptPresentation props_Variable;
   private ConceptPresentation props_VariableReference;
 
@@ -133,6 +134,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PlusExpression = cpb.create();
         }
         return props_PlusExpression;
+      case LanguageConceptSwitch.StatementContainer:
+        if (props_StatementContainer == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_StatementContainer = cpb.create();
+        }
+        return props_StatementContainer;
       case LanguageConceptSwitch.Variable:
         if (props_Variable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
