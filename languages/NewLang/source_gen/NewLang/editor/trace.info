@@ -16,7 +16,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="19,0,130,0" name="NewLang.editor.EditorAspectDescriptorImpl" />
+      <unit at="19,0,144,0" name="NewLang.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="GrammarActionsDescriptor.java">
       <unit at="459,51,463,5" name="NewLang.editor.GrammarActionsDescriptor$6" />
@@ -60,6 +60,11 @@
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BaseType$GrammarCellsSubstituteMenuPart_3ck95v_a" />
       <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BaseType" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_BinaryComparisonExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BinaryComparisonExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BinaryComparisonExpression$GrammarCellsSubstituteMenuPart_ufjc7z_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BinaryComparisonExpression" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_BinaryExpression.java">
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BinaryExpression$CONCEPTS" />
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_BinaryExpression$GrammarCellsSubstituteMenuPart_ournt6_a" />
@@ -80,6 +85,11 @@
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_EmptyStatement$GrammarCellsSubstituteMenuPart_q72ijj_a" />
       <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_EmptyStatement" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_EqualExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_EqualExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_EqualExpression$GrammarCellsSubstituteMenuPart_jniuy0_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_EqualExpression" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_ExpStatement.java">
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_ExpStatement$CONCEPTS" />
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_ExpStatement$GrammarCellsSubstituteMenuPart_h3vipj_a" />
@@ -89,6 +99,16 @@
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Expression$CONCEPTS" />
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Expression$GrammarCellsSubstituteMenuPart_dloqca_a" />
       <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Expression" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_GreaterEqualExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_GreaterEqualExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_GreaterEqualExpression$GrammarCellsSubstituteMenuPart_1dn0t3_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_GreaterEqualExpression" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_GreaterThanExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_GreaterThanExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_GreaterThanExpression$GrammarCellsSubstituteMenuPart_vpzvuz_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_GreaterThanExpression" />
     </file>
     <file name="GrammarCellsSubstituteMenu_IfStatement.java">
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_IfStatement$CONCEPTS" />
@@ -105,6 +125,16 @@
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Istatement$GrammarCellsSubstituteMenuPart_i5s1b5_a" />
       <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Istatement" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_LowerEqualExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_LowerEqualExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_LowerEqualExpression$GrammarCellsSubstituteMenuPart_twur8j_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_LowerEqualExpression" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_LowerToExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_LowerToExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_LowerToExpression$GrammarCellsSubstituteMenuPart_vf3c8s_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_LowerToExpression" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_Main.java">
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Main$CONCEPTS" />
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_Main$GrammarCellsSubstituteMenuPart_8h8c4q_a" />
@@ -119,6 +149,11 @@
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_MulExpression$CONCEPTS" />
       <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_MulExpression$GrammarCellsSubstituteMenuPart_ld1jow_a" />
       <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_MulExpression" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_NotEqualExpression.java">
+      <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_NotEqualExpression$CONCEPTS" />
+      <unit at="46,0,56,0" name="NewLang.editor.GrammarCellsSubstituteMenu_NotEqualExpression$GrammarCellsSubstituteMenuPart_y1onh6_a" />
+      <unit at="21,0,61,0" name="NewLang.editor.GrammarCellsSubstituteMenu_NotEqualExpression" />
     </file>
     <file name="GrammarCellsSubstituteMenu_PlusExpression.java">
       <unit at="57,0,60,0" name="NewLang.editor.GrammarCellsSubstituteMenu_PlusExpression$CONCEPTS" />

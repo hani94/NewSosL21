@@ -8,6 +8,9 @@
   <imports />
   <registry>
     <language id="e1e1e1ca-38f5-4b3a-bc4e-629f7e2e7b1b" name="TestLanguage">
+      <concept id="4434428223441913078" name="TestLanguage.structure.AssertStatement" flags="ng" index="2XGCgf">
+        <child id="4434428223441913081" name="exp" index="2XGCg0" />
+      </concept>
       <concept id="4434428223441639892" name="TestLanguage.structure.TestSuite" flags="ng" index="2XJH$H">
         <child id="4434428223441639898" name="tests" index="2XJH$z" />
       </concept>
@@ -21,6 +24,9 @@
         <child id="5886937167956143640" name="condition" index="2ACRgL" />
         <child id="5886937167956143644" name="body" index="2ACRgP" />
       </concept>
+      <concept id="5886937167956998489" name="NewLang.structure.LowerEqualExpression" flags="ng" index="2AF6dK" />
+      <concept id="5886937167956998488" name="NewLang.structure.GreaterEqualExpression" flags="ng" index="2AF6dL" />
+      <concept id="5886937167956998485" name="NewLang.structure.EqualExpression" flags="ng" index="2AF6dW" />
       <concept id="3150835171450160066" name="NewLang.structure.DivExpression" flags="ng" index="JCw0B" />
       <concept id="3150835171450128157" name="NewLang.structure.BinaryExpression" flags="ng" index="JFojS">
         <child id="3150835171450133260" name="left" index="JFpzD" />
@@ -31,6 +37,9 @@
       <concept id="3150835171450157456" name="NewLang.structure.MulExpression" flags="ng" index="JFvDP" />
       <concept id="4434428223439871011" name="NewLang.structure.BBooleanType" flags="ng" index="2X$XNq" />
       <concept id="4434428223439871010" name="NewLang.structure.BIntegerType" flags="ng" index="2X$XNr" />
+      <concept id="4434428223442190242" name="NewLang.structure.VariableReference" flags="ng" index="2XHFXr">
+        <reference id="4434428223442190243" name="var" index="2XHFXq" />
+      </concept>
       <concept id="1623200333230738446" name="NewLang.structure.Main" flags="ng" index="1b1kwk">
         <child id="680781990145078838" name="content" index="3XpyAE" />
       </concept>
@@ -168,7 +177,14 @@
       <property role="TrG5h" value="ssadsadsadsad23" />
       <node concept="2X$XNr" id="3QagfA0d8vT" role="2XBp8P" />
     </node>
-    <node concept="3XpyAx" id="56MAyBR6aFE" role="3XpyAE" />
+    <node concept="JFtB4" id="56MAyBR7J$f" role="3XpyAE">
+      <node concept="2XHFXr" id="56MAyBR7J_9" role="JFpzF">
+        <ref role="2XHFXq" node="3QagfA0bHs7" resolve="esdf" />
+      </node>
+      <node concept="3Xpsyu" id="56MAyBR7Jzz" role="JFpzD">
+        <property role="3Xpu57" value="3" />
+      </node>
+    </node>
     <node concept="3XpzeA" id="56MAyBR7FTi" role="3XpyAE">
       <property role="TrG5h" value="r" />
       <node concept="2X$XNr" id="56MAyBR7FU3" role="2XBp8P" />
@@ -192,9 +208,30 @@
       <node concept="3XpyAx" id="56MAyBR5_gH" role="2ACRgP" />
     </node>
     <node concept="3XpyAx" id="56MAyBR5_eS" role="3XpyAE" />
-    <node concept="3XpyAx" id="56MAyBR50TG" role="3XpyAE" />
-    <node concept="3XpyAx" id="56MAyBR5_gN" role="3XpyAE" />
-    <node concept="3XpyAx" id="56MAyBR5_hk" role="3XpyAE" />
+    <node concept="2AF6dW" id="56MAyBR8n1t" role="3XpyAE">
+      <node concept="3Xpsyu" id="56MAyBR8n3E" role="JFpzD">
+        <property role="3Xpu57" value="5" />
+      </node>
+      <node concept="3Xpsyu" id="56MAyBR8n2G" role="JFpzF">
+        <property role="3Xpu57" value="5" />
+      </node>
+    </node>
+    <node concept="3XpyAx" id="56MAyBR8n2T" role="3XpyAE" />
+    <node concept="JCw0B" id="3HH4bfMAzK0" role="3XpyAE">
+      <node concept="3Xpsyu" id="3HH4bfMAzL0" role="JFpzD">
+        <property role="3Xpu57" value="4" />
+      </node>
+      <node concept="3Xpsyu" id="3HH4bfMAzLt" role="JFpzF">
+        <property role="3Xpu57" value="5" />
+      </node>
+    </node>
+    <node concept="3XpyAx" id="3HH4bfMAzLD" role="3XpyAE" />
+    <node concept="2AF6dL" id="56MAyBR8n3R" role="3XpyAE">
+      <node concept="3Xpsyu" id="56MAyBR8n4Q" role="JFpzD">
+        <property role="3Xpu57" value="4" />
+      </node>
+      <node concept="2mqjkq" id="56MAyBR8n5l" role="JFpzF" />
+    </node>
     <node concept="3XpyAx" id="56MAyBR50QU" role="3XpyAE" />
     <node concept="3XpyAx" id="56MAyBR50PR" role="3XpyAE" />
     <node concept="3XpyAx" id="56MAyBR50Pf" role="3XpyAE" />
@@ -213,7 +250,14 @@
         <property role="TrG5h" value="dsa" />
         <node concept="2X$XNq" id="3QagfA0eaOT" role="2XBp8P" />
       </node>
-      <node concept="3XpyAx" id="56MAyBR6act" role="2XJHFk" />
+      <node concept="2XGCgf" id="56MAyBR8WSh" role="2XJHFk">
+        <node concept="2AF6dK" id="56MAyBR8WSH" role="2XGCg0">
+          <node concept="2mqjkq" id="56MAyBR8WTj" role="JFpzF" />
+          <node concept="3Xpsyu" id="56MAyBR8WSz" role="JFpzD">
+            <property role="3Xpu57" value="5" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

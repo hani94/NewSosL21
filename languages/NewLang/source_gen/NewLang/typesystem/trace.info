@@ -8,17 +8,18 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,44,0" name="NewLang.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,48,0" name="NewLang.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/1043693389239860197">
     <file name="TypesystemDescriptor.java">
-      <node id="1043693389239860197" at="18,5,19,86" concept="5" />
-      <node id="1043693389239860197" at="19,86,20,47" concept="2" />
-      <node id="1043693389239860197" at="17,5,21,5" concept="0" />
-      <scope id="1043693389239860197" at="18,5,20,47">
+      <node id="1043693389239860197" at="22,5,23,86" concept="5" />
+      <node id="1043693389239860197" at="23,86,24,47" concept="2" />
+      <node id="1043693389239860197" at="21,5,25,5" concept="0" />
+      <scope id="1043693389239860197" at="22,5,24,47">
         <var name="inferenceRule" id="1043693389239860197" />
       </scope>
     </file>
@@ -62,10 +63,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/1043693389239993482">
     <file name="TypesystemDescriptor.java">
-      <node id="1043693389239993482" at="30,5,31,86" concept="5" />
-      <node id="1043693389239993482" at="31,86,32,47" concept="2" />
-      <node id="1043693389239993482" at="29,5,33,5" concept="0" />
-      <scope id="1043693389239993482" at="30,5,32,47">
+      <node id="1043693389239993482" at="34,5,35,86" concept="5" />
+      <node id="1043693389239993482" at="35,86,36,47" concept="2" />
+      <node id="1043693389239993482" at="33,5,37,5" concept="0" />
+      <scope id="1043693389239993482" at="34,5,36,47">
         <var name="inferenceRule" id="1043693389239993482" />
       </scope>
     </file>
@@ -122,10 +123,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/1043693389240129775">
     <file name="TypesystemDescriptor.java">
-      <node id="1043693389240129775" at="10,5,11,86" concept="5" />
-      <node id="1043693389240129775" at="11,86,12,47" concept="2" />
-      <node id="1043693389240129775" at="9,33,13,5" concept="0" />
-      <scope id="1043693389240129775" at="10,5,12,47">
+      <node id="1043693389240129775" at="14,5,15,86" concept="5" />
+      <node id="1043693389240129775" at="15,86,16,47" concept="2" />
+      <node id="1043693389240129775" at="13,5,17,5" concept="0" />
+      <scope id="1043693389240129775" at="14,5,16,47">
         <var name="inferenceRule" id="1043693389240129775" />
       </scope>
     </file>
@@ -169,10 +170,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/1043693389240284229">
     <file name="TypesystemDescriptor.java">
-      <node id="1043693389240284229" at="22,5,23,87" concept="5" />
-      <node id="1043693389240284229" at="23,87,24,47" concept="2" />
-      <node id="1043693389240284229" at="21,5,25,5" concept="0" />
-      <scope id="1043693389240284229" at="22,5,24,47">
+      <node id="1043693389240284229" at="26,5,27,87" concept="5" />
+      <node id="1043693389240284229" at="27,87,28,47" concept="2" />
+      <node id="1043693389240284229" at="25,5,29,5" concept="0" />
+      <scope id="1043693389240284229" at="26,5,28,47">
         <var name="inferenceRule" id="1043693389240284229" />
       </scope>
     </file>
@@ -229,10 +230,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/4434428223439265662">
     <file name="TypesystemDescriptor.java">
-      <node id="4434428223439265662" at="26,5,27,85" concept="5" />
-      <node id="4434428223439265662" at="27,85,28,47" concept="2" />
-      <node id="4434428223439265662" at="25,5,29,5" concept="0" />
-      <scope id="4434428223439265662" at="26,5,28,47">
+      <node id="4434428223439265662" at="30,5,31,85" concept="5" />
+      <node id="4434428223439265662" at="31,85,32,47" concept="2" />
+      <node id="4434428223439265662" at="29,5,33,5" concept="0" />
+      <scope id="4434428223439265662" at="30,5,32,47">
         <var name="inferenceRule" id="4434428223439265662" />
       </scope>
     </file>
@@ -289,10 +290,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/4434428223439386519">
     <file name="TypesystemDescriptor.java">
-      <node id="4434428223439386519" at="14,5,15,85" concept="5" />
-      <node id="4434428223439386519" at="15,85,16,47" concept="2" />
-      <node id="4434428223439386519" at="13,5,17,5" concept="0" />
-      <scope id="4434428223439386519" at="14,5,16,47">
+      <node id="4434428223439386519" at="18,5,19,85" concept="5" />
+      <node id="4434428223439386519" at="19,85,20,47" concept="2" />
+      <node id="4434428223439386519" at="17,5,21,5" concept="0" />
+      <scope id="4434428223439386519" at="18,5,20,47">
         <var name="inferenceRule" id="4434428223439386519" />
       </scope>
     </file>
@@ -349,10 +350,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/4434428223440882741">
     <file name="TypesystemDescriptor.java">
-      <node id="4434428223440882741" at="34,5,35,80" concept="5" />
-      <node id="4434428223440882741" at="35,80,36,47" concept="2" />
-      <node id="4434428223440882741" at="33,5,37,5" concept="0" />
-      <scope id="4434428223440882741" at="34,5,36,47">
+      <node id="4434428223440882741" at="38,5,39,80" concept="5" />
+      <node id="4434428223440882741" at="39,80,40,47" concept="2" />
+      <node id="4434428223440882741" at="37,5,41,5" concept="0" />
+      <scope id="4434428223440882741" at="38,5,40,47">
         <var name="inferenceRule" id="4434428223440882741" />
       </scope>
     </file>
@@ -409,10 +410,10 @@
   </root>
   <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/4434428223442483625">
     <file name="TypesystemDescriptor.java">
-      <node id="4434428223442483625" at="38,5,39,89" concept="5" />
-      <node id="4434428223442483625" at="39,89,40,47" concept="2" />
-      <node id="4434428223442483625" at="37,5,41,5" concept="0" />
-      <scope id="4434428223442483625" at="38,5,40,47">
+      <node id="4434428223442483625" at="42,5,43,89" concept="5" />
+      <node id="4434428223442483625" at="43,89,44,47" concept="2" />
+      <node id="4434428223442483625" at="41,5,45,5" concept="0" />
+      <scope id="4434428223442483625" at="42,5,44,47">
         <var name="inferenceRule" id="4434428223442483625" />
       </scope>
     </file>
@@ -454,6 +455,74 @@
       <unit id="4434428223442483625" at="37,0,40,0" name="NewLang.typesystem.typeof_VariableReference_InferenceRule$LINKS" />
       <unit id="4434428223442483625" at="41,0,44,0" name="NewLang.typesystem.typeof_VariableReference_InferenceRule$CONCEPTS" />
       <unit id="4434428223442483625" at="17,0,45,0" name="NewLang.typesystem.typeof_VariableReference_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:a1c6be00-c5ac-4e79-a109-6f424ba907b2(NewLang.typesystem)/5886937167956998500">
+    <file name="TypesystemDescriptor.java">
+      <node id="5886937167956998500" at="10,5,11,98" concept="5" />
+      <node id="5886937167956998500" at="11,98,12,47" concept="2" />
+      <node id="5886937167956998500" at="9,33,13,5" concept="0" />
+      <scope id="5886937167956998500" at="10,5,12,47">
+        <var name="inferenceRule" id="5886937167956998500" />
+      </scope>
+    </file>
+    <file name="typeof_BinaryComparisonExpression_InferenceRule.java">
+      <node id="5886937167956999756" at="22,5,23,68" concept="5" />
+      <node id="5886937167956999756" at="23,68,24,184" concept="5" />
+      <node id="5886937167956999756" at="24,184,25,261" concept="2" />
+      <node id="5886937167957004139" at="28,7,29,70" concept="5" />
+      <node id="5886937167957004139" at="29,70,30,186" concept="5" />
+      <node id="5886937167957004139" at="30,186,31,467" concept="2" />
+      <node id="5886937167956998500" at="35,50,36,50" concept="6" />
+      <node id="5886937167956998500" at="38,68,39,102" concept="6" />
+      <node id="5886937167956998500" at="41,30,42,17" concept="6" />
+      <node id="5886937167956999772" at="44,61,45,72" concept="5" />
+      <node id="5886937167956999772" at="45,72,46,26" concept="6" />
+      <node id="5886937167956998500" at="50,0,51,0" concept="7" trace="left$VSk_" />
+      <node id="5886937167956998500" at="51,0,52,0" concept="7" trace="right$VSMB" />
+      <node id="5886937167956998500" at="55,0,56,0" concept="7" trace="BinaryComparisonExpression$WK" />
+      <node id="5886937167956998500" at="56,0,57,0" concept="7" trace="BBooleanType$QE" />
+      <node id="5886937167956998500" at="19,0,21,0" concept="1" trace="typeof_BinaryComparisonExpression_InferenceRule#()V" />
+      <node id="5886937167956998500" at="35,0,38,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5886937167956998500" at="38,0,41,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5886937167956998500" at="41,0,44,0" concept="4" trace="overrides#()Z" />
+      <node id="5886937167956999772" at="44,0,48,0" concept="8" trace="createBBooleanType_5v0o3_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5886937167956999756" at="21,139,26,5" concept="0" />
+      <node id="5886937167957004139" at="27,59,32,7" concept="0" />
+      <node id="5886937167957004139" at="26,5,33,5" concept="3" />
+      <node id="5886937167956998500" at="21,0,35,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5886937167956998500" at="19,60,19,60" />
+      <scope id="5886937167956998500" at="35,50,36,50" />
+      <scope id="5886937167956998500" at="38,68,39,102" />
+      <scope id="5886937167956998500" at="41,30,42,17" />
+      <scope id="5886937167956998500" at="19,0,21,0" />
+      <scope id="5886937167956999772" at="44,61,46,26">
+        <var name="n0" id="5886937167956999772" />
+      </scope>
+      <scope id="5886937167956999756" at="22,5,25,261">
+        <var name="_info_12389875345" id="5886937167956999756" />
+        <var name="_nodeToCheck_1029348928467" id="5886937167956999756" />
+      </scope>
+      <scope id="5886937167957004139" at="28,7,31,467">
+        <var name="_info_12389875345" id="5886937167957004139" />
+        <var name="_nodeToCheck_1029348928467" id="5886937167957004139" />
+      </scope>
+      <scope id="5886937167956998500" at="35,0,38,0" />
+      <scope id="5886937167956998500" at="38,0,41,0">
+        <var name="argument" id="5886937167956998500" />
+      </scope>
+      <scope id="5886937167956998500" at="41,0,44,0" />
+      <scope id="5886937167956999772" at="44,0,48,0" />
+      <scope id="5886937167957004139" at="27,59,32,7" />
+      <scope id="5886937167956998501" at="21,139,33,5" />
+      <scope id="5886937167956998500" at="21,0,35,0">
+        <var name="binaryComparisonExpression" id="5886937167956998500" />
+        <var name="status" id="5886937167956998500" />
+        <var name="typeCheckingContext" id="5886937167956998500" />
+      </scope>
+      <unit id="5886937167956998500" at="49,0,53,0" name="NewLang.typesystem.typeof_BinaryComparisonExpression_InferenceRule$LINKS" />
+      <unit id="5886937167956998500" at="54,0,58,0" name="NewLang.typesystem.typeof_BinaryComparisonExpression_InferenceRule$CONCEPTS" />
+      <unit id="5886937167956998500" at="18,0,59,0" name="NewLang.typesystem.typeof_BinaryComparisonExpression_InferenceRule" />
     </file>
   </root>
 </debug-info>

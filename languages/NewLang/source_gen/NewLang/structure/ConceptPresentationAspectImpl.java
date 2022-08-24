@@ -12,18 +12,25 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BBooleanType;
   private ConceptPresentation props_BIntegerType;
   private ConceptPresentation props_BaseType;
+  private ConceptPresentation props_BinaryComparisonExpression;
   private ConceptPresentation props_BinaryExpression;
   private ConceptPresentation props_BooleanLiteral;
   private ConceptPresentation props_DivExpression;
   private ConceptPresentation props_EmptyStatement;
+  private ConceptPresentation props_EqualExpression;
   private ConceptPresentation props_ExpStatement;
   private ConceptPresentation props_Expression;
+  private ConceptPresentation props_GreaterEqualExpression;
+  private ConceptPresentation props_GreaterThanExpression;
   private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_IntegerLiteral;
   private ConceptPresentation props_Istatement;
+  private ConceptPresentation props_LowerEqualExpression;
+  private ConceptPresentation props_LowerToExpression;
   private ConceptPresentation props_Main;
   private ConceptPresentation props_MinusExpression;
   private ConceptPresentation props_MulExpression;
+  private ConceptPresentation props_NotEqualExpression;
   private ConceptPresentation props_PlusExpression;
   private ConceptPresentation props_StatementContainer;
   private ConceptPresentation props_Variable;
@@ -54,6 +61,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BaseType = cpb.create();
         }
         return props_BaseType;
+      case LanguageConceptSwitch.BinaryComparisonExpression:
+        if (props_BinaryComparisonExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_BinaryComparisonExpression = cpb.create();
+        }
+        return props_BinaryComparisonExpression;
       case LanguageConceptSwitch.BinaryExpression:
         if (props_BinaryExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -81,6 +94,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EmptyStatement = cpb.create();
         }
         return props_EmptyStatement;
+      case LanguageConceptSwitch.EqualExpression:
+        if (props_EqualExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("==");
+          props_EqualExpression = cpb.create();
+        }
+        return props_EqualExpression;
       case LanguageConceptSwitch.ExpStatement:
         if (props_ExpStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -94,6 +114,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Expression = cpb.create();
         }
         return props_Expression;
+      case LanguageConceptSwitch.GreaterEqualExpression:
+        if (props_GreaterEqualExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation(">=");
+          props_GreaterEqualExpression = cpb.create();
+        }
+        return props_GreaterEqualExpression;
+      case LanguageConceptSwitch.GreaterThanExpression:
+        if (props_GreaterThanExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation(">");
+          props_GreaterThanExpression = cpb.create();
+        }
+        return props_GreaterThanExpression;
       case LanguageConceptSwitch.IfStatement:
         if (props_IfStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -114,6 +148,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Istatement = cpb.create();
         }
         return props_Istatement;
+      case LanguageConceptSwitch.LowerEqualExpression:
+        if (props_LowerEqualExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<=");
+          props_LowerEqualExpression = cpb.create();
+        }
+        return props_LowerEqualExpression;
+      case LanguageConceptSwitch.LowerToExpression:
+        if (props_LowerToExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<");
+          props_LowerToExpression = cpb.create();
+        }
+        return props_LowerToExpression;
       case LanguageConceptSwitch.Main:
         if (props_Main == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -135,6 +183,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MulExpression = cpb.create();
         }
         return props_MulExpression;
+      case LanguageConceptSwitch.NotEqualExpression:
+        if (props_NotEqualExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("!=");
+          props_NotEqualExpression = cpb.create();
+        }
+        return props_NotEqualExpression;
       case LanguageConceptSwitch.PlusExpression:
         if (props_PlusExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

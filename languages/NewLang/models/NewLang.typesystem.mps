@@ -21,6 +21,14 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -62,6 +70,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -442,6 +453,62 @@
     <node concept="1YaCAy" id="3QagfA0gnAG" role="1YuTPh">
       <property role="TrG5h" value="variableReference" />
       <ref role="1YaFvo" to="cln3:3QagfA0ffYy" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="56MAyBR7J_$">
+    <property role="TrG5h" value="typeof_BinaryComparisonExpression" />
+    <property role="3GE5qa" value="BinaryExpressions" />
+    <node concept="3clFbS" id="56MAyBR7J__" role="18ibNy">
+      <node concept="1Z5TYs" id="56MAyBR7JTc" role="3cqZAp">
+        <node concept="mw_s8" id="56MAyBR7JTw" role="1ZfhKB">
+          <node concept="2pJPEk" id="56MAyBR7JTs" role="mwGJk">
+            <node concept="2pJPED" id="56MAyBR7JTu" role="2pJPEn">
+              <ref role="2pJxaS" to="cln3:3QagfA06pKz" resolve="BBooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="56MAyBR7JTf" role="1ZfhK$">
+          <node concept="1Z2H0r" id="56MAyBR7J_F" role="mwGJk">
+            <node concept="1YBJjd" id="56MAyBR7JB_" role="1Z2MuG">
+              <ref role="1YBMHb" node="56MAyBR7J_B" resolve="binaryComparisonExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="56MAyBR7KXF" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="56MAyBR7KXH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="56MAyBR7KXI" role="mwGJk">
+            <node concept="2OqwBi" id="56MAyBR7KXJ" role="1Z2MuG">
+              <node concept="1YBJjd" id="56MAyBR7KXK" role="2Oq$k0">
+                <ref role="1YBMHb" node="56MAyBR7J_B" resolve="binaryComparisonExpression" />
+              </node>
+              <node concept="3TrEf2" id="56MAyBR7KXL" role="2OqNvi">
+                <ref role="3Tt5mk" to="cln3:2IU0Yk45TGc" resolve="left" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="56MAyBR7KXM" role="1ZfhKB">
+          <node concept="1Z2H0r" id="56MAyBR7KXN" role="mwGJk">
+            <node concept="2OqwBi" id="56MAyBR7KXO" role="1Z2MuG">
+              <node concept="1YBJjd" id="56MAyBR7KXP" role="2Oq$k0">
+                <ref role="1YBMHb" node="56MAyBR7J_B" resolve="binaryComparisonExpression" />
+              </node>
+              <node concept="3TrEf2" id="56MAyBR7KXQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="cln3:2IU0Yk45TGe" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1YBJjd" id="56MAyBR8n9R" role="1ZmcU8">
+          <ref role="1YBMHb" node="56MAyBR7J_B" resolve="binaryComparisonExpression" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="56MAyBR7J_B" role="1YuTPh">
+      <property role="TrG5h" value="binaryComparisonExpression" />
+      <ref role="1YaFvo" to="cln3:56MAyBR7J_r" resolve="BinaryComparisonExpression" />
     </node>
   </node>
 </model>
