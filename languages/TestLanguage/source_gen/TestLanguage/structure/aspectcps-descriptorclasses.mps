@@ -324,8 +324,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="C" role="3Kbmr1">
-              <ref role="3cqZAo" node="1U" resolve="AssertStatement" />
               <ref role="1PxDUh" node="1S" resolve="LanguageConceptSwitch" />
+              <ref role="3cqZAo" node="1U" resolve="AssertStatement" />
             </node>
           </node>
           <node concept="3KbdKl" id="y" role="3KbHQx">
@@ -386,8 +386,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="11" role="3Kbmr1">
-              <ref role="3cqZAo" node="1V" resolve="TestCase" />
               <ref role="1PxDUh" node="1S" resolve="LanguageConceptSwitch" />
+              <ref role="3cqZAo" node="1V" resolve="TestCase" />
             </node>
           </node>
           <node concept="3KbdKl" id="z" role="3KbHQx">
@@ -448,8 +448,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="1p" role="3Kbmr1">
-              <ref role="3cqZAo" node="1W" resolve="TestSuite" />
               <ref role="1PxDUh" node="1S" resolve="LanguageConceptSwitch" />
+              <ref role="3cqZAo" node="1W" resolve="TestSuite" />
             </node>
           </node>
         </node>
@@ -860,8 +860,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="4n" role="3Kbmr1">
-              <ref role="3cqZAo" node="1U" resolve="AssertStatement" />
               <ref role="1PxDUh" node="1S" resolve="LanguageConceptSwitch" />
+              <ref role="3cqZAo" node="1U" resolve="AssertStatement" />
             </node>
           </node>
           <node concept="3KbdKl" id="4i" role="3KbHQx">
@@ -873,8 +873,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="4r" role="3Kbmr1">
-              <ref role="3cqZAo" node="1V" resolve="TestCase" />
               <ref role="1PxDUh" node="1S" resolve="LanguageConceptSwitch" />
+              <ref role="3cqZAo" node="1V" resolve="TestCase" />
             </node>
           </node>
           <node concept="3KbdKl" id="4j" role="3KbHQx">
@@ -886,8 +886,8 @@
               </node>
             </node>
             <node concept="10M0yZ" id="4v" role="3Kbmr1">
-              <ref role="3cqZAo" node="1W" resolve="TestSuite" />
               <ref role="1PxDUh" node="1S" resolve="LanguageConceptSwitch" />
+              <ref role="3cqZAo" node="1W" resolve="TestSuite" />
             </node>
           </node>
           <node concept="2OqwBi" id="4k" role="3KbGdf">
@@ -1033,7 +1033,7 @@
             <node concept="liA8E" id="5m" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.version(int)" resolve="version" />
               <node concept="3cmrfG" id="5n" role="37wK5m">
-                <property role="3cmrfH" value="2" />
+                <property role="3cmrfH" value="3" />
               </node>
             </node>
           </node>
@@ -1236,7 +1236,7 @@
             <node concept="liA8E" id="6z" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.version(int)" resolve="version" />
               <node concept="3cmrfG" id="6$" role="37wK5m">
-                <property role="3cmrfH" value="2" />
+                <property role="3cmrfH" value="3" />
               </node>
             </node>
           </node>
@@ -1413,7 +1413,7 @@
             <node concept="liA8E" id="7_" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.version(int)" resolve="version" />
               <node concept="3cmrfG" id="7A" role="37wK5m">
-                <property role="3cmrfH" value="2" />
+                <property role="3cmrfH" value="3" />
               </node>
             </node>
           </node>

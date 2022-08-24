@@ -2,7 +2,7 @@
 <model ref="r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -232,7 +232,7 @@
   <node concept="1TIwiD" id="56MAyBR4uSn">
     <property role="EcuMT" value="5886937167956143639" />
     <property role="TrG5h" value="IfStatement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="56MAyBR4uSo" role="1TKVEi">
       <property role="IQ2ns" value="5886937167956143640" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -302,6 +302,69 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="BinaryExpressions" />
     <ref role="1TJDcQ" node="2IU0Yk45Sst" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="3czVGKcUpyf">
+    <property role="EcuMT" value="3685051480276572303" />
+    <property role="TrG5h" value="NewFunction" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3czVGKcUpyg" role="PzmwI">
+      <ref role="PrY4T" node="3QagfA0lEue" resolve="Istatement" />
+    </node>
+    <node concept="PrWs8" id="3czVGKcUpyi" role="PzmwI">
+      <ref role="PrY4T" node="3QagfA0lErO" resolve="StatementContainer" />
+    </node>
+    <node concept="PrWs8" id="3czVGKcUqys" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="3czVGKcUpAf" role="1TKVEi">
+      <property role="IQ2ns" value="3685051480276572559" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="_MBTNO5aKU" resolve="Variable" />
+    </node>
+    <node concept="1TJgyj" id="3czVGKcUpAh" role="1TKVEi">
+      <property role="IQ2ns" value="3685051480276572561" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3QagfA0lEue" resolve="Istatement" />
+    </node>
+    <node concept="1TJgyj" id="3czVGKcUpAk" role="1TKVEi">
+      <property role="IQ2ns" value="3685051480276572564" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="returnType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3QagfA06pKk" resolve="BaseType" />
+    </node>
+    <node concept="1TJgyj" id="3czVGKcUpAo" role="1TKVEi">
+      <property role="IQ2ns" value="3685051480276572568" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="returnValue" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3QagfA0lEue" resolve="Istatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ajheudG1DB">
+    <property role="EcuMT" value="4797253789384972903" />
+    <property role="TrG5h" value="FunctionCall" />
+    <ref role="1TJDcQ" node="2IU0Yk45M$N" resolve="Expression" />
+    <node concept="1TJgyj" id="4ajheudG1Ln" role="1TKVEi">
+      <property role="IQ2ns" value="4797253789384973399" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3czVGKcUpyf" resolve="NewFunction" />
+    </node>
+    <node concept="1TJgyj" id="4ajheudG1M0" role="1TKVEi">
+      <property role="IQ2ns" value="4797253789384973440" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2IU0Yk45M$N" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4ajheudHqGz" role="PzmwI">
+      <ref role="PrY4T" node="3QagfA0lEue" resolve="Istatement" />
+    </node>
   </node>
 </model>
 
