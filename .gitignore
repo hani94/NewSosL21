@@ -2673,3 +2673,6 @@ libcode/mbeddr.allScripts/languages/mbeddr.allScripts/com.mbeddr.allScripts-src.
 libcode/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar
 libcode/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform-src.jar
 libcode/mbeddr.allScripts/META-INF/plugin.xml
+languages/
+lib/
+solutions/LanguageIns/classes_gen/LanguageIns/model/trace.info
