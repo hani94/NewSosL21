@@ -21,14 +21,18 @@ public final class DivExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e5041803c2L, "NewLang.structure.DivExpression");
 
   public static final SMethod<Integer> priority_idTVWpIo3c8y = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("priority").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).id("TVWpIo3c8y").build();
+  public static final SMethod<Integer> value_id2K_E7IbLXAv = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2K_E7IbLXAv").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_idTVWpIo3c8y);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_idTVWpIo3c8y, value_id2K_E7IbLXAv);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static int priority_idTVWpIo3c8y(@NotNull SAbstractConcept __thisConcept__) {
     return 1;
+  }
+  /*package*/ static int value_id2K_E7IbLXAv(@NotNull SNode __thisNode__) {
+    return 0;
   }
 
   /*package*/ DivExpression__BehaviorDescriptor() {
@@ -46,6 +50,8 @@ public final class DivExpression__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 1:
+        return (T) ((Integer) value_id2K_E7IbLXAv(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

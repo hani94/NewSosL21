@@ -232,7 +232,7 @@
   <node concept="1TIwiD" id="56MAyBR4uSn">
     <property role="EcuMT" value="5886937167956143639" />
     <property role="TrG5h" value="IfStatement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="56MAyBR4uSo" role="1TKVEi">
       <property role="IQ2ns" value="5886937167956143640" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
