@@ -40,7 +40,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.constraints.ConstraintsCanBeFacade;
 import jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
-import jetbrains.mps.smodel.presentation.NodePresentationUtil;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition;
@@ -186,6 +185,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -264,6 +268,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -340,6 +349,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -496,7 +510,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BinaryExpression$FB, _context.getModel(), BinaryExpression_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
@@ -516,9 +530,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -592,7 +603,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BinaryExpression$FB, _context.getModel(), BinaryExpression_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
@@ -612,9 +623,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);

@@ -375,6 +375,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
           public SAbstractConcept getOutputConcept() {
             return CONCEPTS.Variable$RB;
           }
+
+
         });
       }
       return result;
