@@ -12,24 +12,14 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
-  private final BHDescriptor myIntegerLiteral__BehaviorDescriptor = new IntegerLiteral__BehaviorDescriptor();
-  private final BHDescriptor myBooleanLiteral__BehaviorDescriptor = new BooleanLiteral__BehaviorDescriptor();
   private final BHDescriptor myMain__BehaviorDescriptor = new Main__BehaviorDescriptor();
-  private final BHDescriptor myExpression__BehaviorDescriptor = new Expression__BehaviorDescriptor();
   private final BHDescriptor myBinaryExpression__BehaviorDescriptor = new BinaryExpression__BehaviorDescriptor();
   private final BHDescriptor myPlusExpression__BehaviorDescriptor = new PlusExpression__BehaviorDescriptor();
   private final BHDescriptor myMinusExpression__BehaviorDescriptor = new MinusExpression__BehaviorDescriptor();
   private final BHDescriptor myMulExpression__BehaviorDescriptor = new MulExpression__BehaviorDescriptor();
   private final BHDescriptor myDivExpression__BehaviorDescriptor = new DivExpression__BehaviorDescriptor();
-  private final BHDescriptor myVariableReference__BehaviorDescriptor = new VariableReference__BehaviorDescriptor();
   private final BHDescriptor myStatementContainer__BehaviorDescriptor = new StatementContainer__BehaviorDescriptor();
   private final BHDescriptor myIfStatement__BehaviorDescriptor = new IfStatement__BehaviorDescriptor();
-  private final BHDescriptor myEqualExpression__BehaviorDescriptor = new EqualExpression__BehaviorDescriptor();
-  private final BHDescriptor myGreaterThanExpression__BehaviorDescriptor = new GreaterThanExpression__BehaviorDescriptor();
-  private final BHDescriptor myLowerToExpression__BehaviorDescriptor = new LowerToExpression__BehaviorDescriptor();
-  private final BHDescriptor myGreaterEqualExpression__BehaviorDescriptor = new GreaterEqualExpression__BehaviorDescriptor();
-  private final BHDescriptor myLowerEqualExpression__BehaviorDescriptor = new LowerEqualExpression__BehaviorDescriptor();
-  private final BHDescriptor myNotEqualExpression__BehaviorDescriptor = new NotEqualExpression__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -41,42 +31,22 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 0:
         return myBinaryExpression__BehaviorDescriptor;
       case 1:
-        return myBooleanLiteral__BehaviorDescriptor;
-      case 2:
         return myDivExpression__BehaviorDescriptor;
-      case 3:
-        return myEqualExpression__BehaviorDescriptor;
-      case 4:
-        return myExpression__BehaviorDescriptor;
-      case 5:
-        return myGreaterEqualExpression__BehaviorDescriptor;
-      case 6:
-        return myGreaterThanExpression__BehaviorDescriptor;
-      case 7:
+      case 2:
         return myIfStatement__BehaviorDescriptor;
-      case 8:
-        return myIntegerLiteral__BehaviorDescriptor;
-      case 9:
-        return myLowerEqualExpression__BehaviorDescriptor;
-      case 10:
-        return myLowerToExpression__BehaviorDescriptor;
-      case 11:
+      case 3:
         return myMain__BehaviorDescriptor;
-      case 12:
+      case 4:
         return myMinusExpression__BehaviorDescriptor;
-      case 13:
+      case 5:
         return myMulExpression__BehaviorDescriptor;
-      case 14:
-        return myNotEqualExpression__BehaviorDescriptor;
-      case 15:
+      case 6:
         return myPlusExpression__BehaviorDescriptor;
-      case 16:
+      case 7:
         return myStatementContainer__BehaviorDescriptor;
-      case 17:
-        return myVariableReference__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417871dL), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0xe7bf19b9812c481L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e5041803c2L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef955L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e504172933L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef958L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef956L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f711ee17L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf4175702L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef959L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef957L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x1686c41a5d838c0eL), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417e568L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417f990L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef95aL), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417da21L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f98056a6f4L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f9803cffa2L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417871dL), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e5041803c2L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f711ee17L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x1686c41a5d838c0eL), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417e568L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417f990L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417da21L), MetaIdFactory.conceptId(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f98056a6f4L)).seal();
 }
