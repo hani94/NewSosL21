@@ -5,8 +5,11 @@ package NewLang.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
+import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
+import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
+import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -17,12 +20,20 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class PlusExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417da21L, "NewLang.structure.PlusExpression");
 
+  public static final SMethod<Integer> IntValue_id2K_E7Ic1fcQ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2K_E7Ic1fcQ").build();
+  public static final SMethod<Boolean> BooleanValue_id731WjNBenk6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("BooleanValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("731WjNBenk6").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(IntValue_id2K_E7Ic1fcQ, BooleanValue_id731WjNBenk6);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static int IntValue_id2K_E7Ic1fcQ(@NotNull SNode __thisNode__) {
+    return 0;
+  }
+  /*package*/ static boolean BooleanValue_id731WjNBenk6(@NotNull SNode __thisNode__) {
+    return false;
+  }
 
   /*package*/ PlusExpression__BehaviorDescriptor() {
   }
@@ -39,6 +50,10 @@ public final class PlusExpression__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 0:
+        return (T) ((Integer) IntValue_id2K_E7Ic1fcQ(node));
+      case 1:
+        return (T) ((Boolean) BooleanValue_id731WjNBenk6(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
