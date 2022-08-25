@@ -8,6 +8,6 @@ public class Exercise 5 {
     int Variable1 = 10;
     boolean Variable2 = true;
     int Variable3 = 3 + 3;
-    int Variable4 = Variable1;<!TextGen not found for 'NewLang.structure.NotEqualExpression'!>
+    int Variable4 = Variable1;<!TextGen not found for 'NewLang.structure.NotEqualExpression'!><!TextGen not found for 'NewLang.structure.EqualExpression'!><!TextGen not found for 'NewLang.structure.GreaterEqualExpression'!>
   }
 }

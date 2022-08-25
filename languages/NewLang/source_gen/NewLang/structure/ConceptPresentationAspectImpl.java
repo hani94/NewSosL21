@@ -20,6 +20,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EqualExpression;
   private ConceptPresentation props_ExpStatement;
   private ConceptPresentation props_Expression;
+  private ConceptPresentation props_ForLoop;
+  private ConceptPresentation props_FunctionCall;
   private ConceptPresentation props_GreaterEqualExpression;
   private ConceptPresentation props_GreaterThanExpression;
   private ConceptPresentation props_IfStatement;
@@ -30,6 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Main;
   private ConceptPresentation props_MinusExpression;
   private ConceptPresentation props_MulExpression;
+  private ConceptPresentation props_NewFunction;
   private ConceptPresentation props_NotEqualExpression;
   private ConceptPresentation props_PlusExpression;
   private ConceptPresentation props_StatementContainer;
@@ -114,6 +117,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Expression = cpb.create();
         }
         return props_Expression;
+      case LanguageConceptSwitch.ForLoop:
+        if (props_ForLoop == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ForLoop");
+          props_ForLoop = cpb.create();
+        }
+        return props_ForLoop;
+      case LanguageConceptSwitch.FunctionCall:
+        if (props_FunctionCall == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x429344e78db01a67L, 0x429344e78db01c57L, "function", "", "");
+          props_FunctionCall = cpb.create();
+        }
+        return props_FunctionCall;
       case LanguageConceptSwitch.GreaterEqualExpression:
         if (props_GreaterEqualExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -183,6 +200,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MulExpression = cpb.create();
         }
         return props_MulExpression;
+      case LanguageConceptSwitch.NewFunction:
+        if (props_NewFunction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_NewFunction = cpb.create();
+        }
+        return props_NewFunction;
       case LanguageConceptSwitch.NotEqualExpression:
         if (props_NotEqualExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

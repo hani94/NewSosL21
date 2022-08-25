@@ -20,21 +20,24 @@ public final class LanguageConceptSwitch {
   public static final int EqualExpression = 8;
   public static final int ExpStatement = 9;
   public static final int Expression = 10;
-  public static final int GreaterEqualExpression = 11;
-  public static final int GreaterThanExpression = 12;
-  public static final int IfStatement = 13;
-  public static final int IntegerLiteral = 14;
-  public static final int Istatement = 15;
-  public static final int LowerEqualExpression = 16;
-  public static final int LowerToExpression = 17;
-  public static final int Main = 18;
-  public static final int MinusExpression = 19;
-  public static final int MulExpression = 20;
-  public static final int NotEqualExpression = 21;
-  public static final int PlusExpression = 22;
-  public static final int StatementContainer = 23;
-  public static final int Variable = 24;
-  public static final int VariableReference = 25;
+  public static final int ForLoop = 11;
+  public static final int FunctionCall = 12;
+  public static final int GreaterEqualExpression = 13;
+  public static final int GreaterThanExpression = 14;
+  public static final int IfStatement = 15;
+  public static final int IntegerLiteral = 16;
+  public static final int Istatement = 17;
+  public static final int LowerEqualExpression = 18;
+  public static final int LowerToExpression = 19;
+  public static final int Main = 20;
+  public static final int MinusExpression = 21;
+  public static final int MulExpression = 22;
+  public static final int NewFunction = 23;
+  public static final int NotEqualExpression = 24;
+  public static final int PlusExpression = 25;
+  public static final int StatementContainer = 26;
+  public static final int Variable = 27;
+  public static final int VariableReference = 28;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x82c3f21d731742c2L, 0xa9382fa615afecaaL);
@@ -49,6 +52,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x51b29a29f71ef955L, EqualExpression);
     builder.put(0x2bba03e5041c9566L, ExpStatement);
     builder.put(0x2bba03e504172933L, Expression);
+    builder.put(0x429344e78dd1fab5L, ForLoop);
+    builder.put(0x429344e78db01a67L, FunctionCall);
     builder.put(0x51b29a29f71ef958L, GreaterEqualExpression);
     builder.put(0x51b29a29f71ef956L, GreaterThanExpression);
     builder.put(0x51b29a29f711ee17L, IfStatement);
@@ -59,6 +64,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x1686c41a5d838c0eL, Main);
     builder.put(0x2bba03e50417e568L, MinusExpression);
     builder.put(0x2bba03e50417f990L, MulExpression);
+    builder.put(0x3323eecc0ce9988fL, NewFunction);
     builder.put(0x51b29a29f71ef95aL, NotEqualExpression);
     builder.put(0x2bba03e50417da21L, PlusExpression);
     builder.put(0x3d8a40f98056a6f4L, StatementContainer);

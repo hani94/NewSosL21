@@ -51,6 +51,16 @@ public final class StatementContainer__BehaviorDescriptor extends BaseBHDescript
 
       return new HidingByNameScope(CONCEPTS.Variable$RB, kind, vars, ScopeUtils.lazyParentScope(__thisNode__, kind));
     }
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.NewFunction$Vh)) {
+      ListScope vars = ListScope.forNamedElements(Sequence.fromIterable(SNodeOperations.ofConcept(StatementContainer__BehaviorDescriptor.getStatements_id3QagfA0lEs0.invoke(__thisNode__), CONCEPTS.NewFunction$Vh)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.getIndexInParent(it) < SNodeOperations.getIndexInParent(child);
+        }
+      }));
+
+      return new HidingByNameScope(CONCEPTS.NewFunction$Vh, kind, vars, ScopeUtils.lazyParentScope(__thisNode__, kind));
+    }
+
     return null;
   }
   /*package*/ static Scope getScope_id52_Geb4QFgX(@NotNull SNode __thisNode__, SAbstractConcept kind, SContainmentLink link, final int index) {
@@ -63,6 +73,17 @@ public final class StatementContainer__BehaviorDescriptor extends BaseBHDescript
 
       return new HidingByNameScope(CONCEPTS.Variable$RB, kind, vars, ScopeUtils.lazyParentScope(__thisNode__, kind));
     }
+
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.NewFunction$Vh)) {
+      ListScope vars = ListScope.forNamedElements(Sequence.fromIterable(SNodeOperations.ofConcept(StatementContainer__BehaviorDescriptor.getStatements_id3QagfA0lEs0.invoke(__thisNode__), CONCEPTS.NewFunction$Vh)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.getIndexInParent(it) < index;
+        }
+      }));
+
+      return new HidingByNameScope(CONCEPTS.NewFunction$Vh, kind, vars, ScopeUtils.lazyParentScope(__thisNode__, kind));
+    }
+
 
     return ((Scope) ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QFgX.invoke0(__thisNode__, CONCEPTS.ScopeProvider$aq, kind, link, ((int) index)));
   }
@@ -117,6 +138,7 @@ public final class StatementContainer__BehaviorDescriptor extends BaseBHDescript
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Variable$RB = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414ac3aL, "NewLang.structure.Variable");
+    /*package*/ static final SConcept NewFunction$Vh = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3323eecc0ce9988fL, "NewLang.structure.NewFunction");
     /*package*/ static final SInterfaceConcept ScopeProvider$aq = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L, "jetbrains.mps.lang.core.structure.ScopeProvider");
   }
 }
