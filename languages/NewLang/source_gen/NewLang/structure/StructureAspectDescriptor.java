@@ -24,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEqualExpression = createDescriptorForEqualExpression();
   /*package*/ final ConceptDescriptor myConceptExpStatement = createDescriptorForExpStatement();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
+  /*package*/ final ConceptDescriptor myConceptForLoop = createDescriptorForForLoop();
   /*package*/ final ConceptDescriptor myConceptFunctionCall = createDescriptorForFunctionCall();
   /*package*/ final ConceptDescriptor myConceptGreaterEqualExpression = createDescriptorForGreaterEqualExpression();
   /*package*/ final ConceptDescriptor myConceptGreaterThanExpression = createDescriptorForGreaterThanExpression();
@@ -55,7 +56,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBBooleanType, myConceptBIntegerType, myConceptBaseType, myConceptBinaryComparisonExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptDivExpression, myConceptEmptyStatement, myConceptEqualExpression, myConceptExpStatement, myConceptExpression, myConceptFunctionCall, myConceptGreaterEqualExpression, myConceptGreaterThanExpression, myConceptIfStatement, myConceptIntegerLiteral, myConceptIstatement, myConceptLowerEqualExpression, myConceptLowerToExpression, myConceptMain, myConceptMinusExpression, myConceptMulExpression, myConceptNewFunction, myConceptNotEqualExpression, myConceptPlusExpression, myConceptStatementContainer, myConceptVariable, myConceptVariableReference);
+    return Arrays.asList(myConceptBBooleanType, myConceptBIntegerType, myConceptBaseType, myConceptBinaryComparisonExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptDivExpression, myConceptEmptyStatement, myConceptEqualExpression, myConceptExpStatement, myConceptExpression, myConceptForLoop, myConceptFunctionCall, myConceptGreaterEqualExpression, myConceptGreaterThanExpression, myConceptIfStatement, myConceptIntegerLiteral, myConceptIstatement, myConceptLowerEqualExpression, myConceptLowerToExpression, myConceptMain, myConceptMinusExpression, myConceptMulExpression, myConceptNewFunction, myConceptNotEqualExpression, myConceptPlusExpression, myConceptStatementContainer, myConceptVariable, myConceptVariableReference);
   }
 
   @Override
@@ -84,6 +85,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptExpStatement;
       case LanguageConceptSwitch.Expression:
         return myConceptExpression;
+      case LanguageConceptSwitch.ForLoop:
+        return myConceptForLoop;
       case LanguageConceptSwitch.FunctionCall:
         return myConceptFunctionCall;
       case LanguageConceptSwitch.GreaterEqualExpression:
@@ -221,6 +224,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L);
     b.origin("r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)/3150835171450104115");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForForLoop() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLang", "ForLoop", 0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x429344e78dd1fab5L);
+    b.class_(false, false, false);
+    b.parent(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L);
+    b.parent(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f98056a6f4L);
+    b.origin("r:3add4a11-5736-4ea5-922c-85c6b84383fd(NewLang.structure)/4797253789387193013");
+    b.version(2);
+    b.associate("initVariable", 0x429344e78e1d4238L).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414ac3aL).optional(false).origin("4797253789392126520").done();
+    b.aggregate("condition", 0x429344e78dd1fae5L).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L).optional(false).ordered(true).multiple(false).origin("4797253789387193061").done();
+    b.aggregate("increment", 0x429344e78dd1fae8L).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L).optional(false).ordered(true).multiple(false).origin("4797253789387193064").done();
+    b.aggregate("body", 0x429344e78dd1faecL).target(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf414b638L).optional(true).ordered(true).multiple(true).origin("4797253789387193068").done();
+    b.alias("ForLoop");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFunctionCall() {

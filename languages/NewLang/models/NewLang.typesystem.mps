@@ -25,6 +25,9 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -90,6 +93,7 @@
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
+        <child id="1180447237840" name="errorString" index="3o8Qv2" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
         <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
@@ -722,6 +726,56 @@
     <node concept="1YaCAy" id="4ajheudLLUK" role="1YuTPh">
       <property role="TrG5h" value="functionCall" />
       <ref role="1YaFvo" to="cln3:4ajheudG1DB" resolve="FunctionCall" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4ajheue8RyQ">
+    <property role="TrG5h" value="typeof_ForLoop" />
+    <node concept="3clFbS" id="4ajheue8RyR" role="18ibNy">
+      <node concept="1Z5TYs" id="4ajheue8RTD" role="3cqZAp">
+        <node concept="mw_s8" id="4ajheue8RTX" role="1ZfhKB">
+          <node concept="2pJPEk" id="4ajheue9ID$" role="mwGJk">
+            <node concept="2pJPED" id="4ajheue9IDA" role="2pJPEn">
+              <ref role="2pJxaS" to="cln3:3QagfA06pKz" resolve="BBooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4ajheue8RTG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4ajheue8RyX" role="mwGJk">
+            <node concept="1YBJjd" id="4ajheue8R$R" role="1Z2MuG">
+              <ref role="1YBMHb" node="4ajheue8RyT" resolve="forLoop" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="4ajheue9IE8" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="4ajheue9IEp" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4ajheue9IEl" role="mwGJk">
+            <node concept="1YBJjd" id="4ajheue9IEE" role="1Z2MuG">
+              <ref role="1YBMHb" node="4ajheue8RyT" resolve="forLoop" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4ajheue9IF7" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4ajheue9IF3" role="mwGJk">
+            <node concept="2OqwBi" id="4ajheue9IQ6" role="1Z2MuG">
+              <node concept="1YBJjd" id="4ajheue9IFo" role="2Oq$k0">
+                <ref role="1YBMHb" node="4ajheue8RyT" resolve="forLoop" />
+              </node>
+              <node concept="3TrEf2" id="4ajheue9J6d" role="2OqNvi">
+                <ref role="3Tt5mk" to="cln3:4ajheudOvF_" resolve="condition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="4ajheueawZq" role="3o8Qv2">
+          <property role="Xl_RC" value="Condition must be boolean type" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4ajheue8RyT" role="1YuTPh">
+      <property role="TrG5h" value="forLoop" />
+      <ref role="1YaFvo" to="cln3:4ajheudOvEP" resolve="ForLoop" />
     </node>
   </node>
 </model>

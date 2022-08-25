@@ -25,9 +25,9 @@
         <child id="5886937167956143644" name="body" index="2ACRgP" />
       </concept>
       <concept id="5886937167956998489" name="NewLang.structure.LowerEqualExpression" flags="ng" index="2AF6dK" />
-      <concept id="5886937167956998488" name="NewLang.structure.GreaterEqualExpression" flags="ng" index="2AF6dL" />
       <concept id="5886937167956998490" name="NewLang.structure.NotEqualExpression" flags="ng" index="2AF6dN" />
       <concept id="5886937167956998485" name="NewLang.structure.EqualExpression" flags="ng" index="2AF6dW" />
+      <concept id="5886937167956998487" name="NewLang.structure.LowerToExpression" flags="ng" index="2AF6dY" />
       <concept id="3150835171450160066" name="NewLang.structure.DivExpression" flags="ng" index="JCw0B" />
       <concept id="3150835171450128157" name="NewLang.structure.BinaryExpression" flags="ng" index="JFojS">
         <child id="3150835171450133260" name="left" index="JFpzD" />
@@ -53,6 +53,12 @@
       <concept id="4797253789384972903" name="NewLang.structure.FunctionCall" flags="ng" index="3f8PU0">
         <reference id="4797253789384973399" name="function" index="3f8PyK" />
         <child id="4797253789384973440" name="arg" index="3f8PxB" />
+      </concept>
+      <concept id="4797253789387193013" name="NewLang.structure.ForLoop" flags="ng" index="3fgFTi">
+        <reference id="4797253789392126520" name="initVariable" index="3czwrv" />
+        <child id="4797253789387193061" name="condition" index="3fgFS2" />
+        <child id="4797253789387193068" name="body" index="3fgFSb" />
+        <child id="4797253789387193064" name="increment" index="3fgFSf" />
       </concept>
       <concept id="680781990145251074" name="NewLang.structure.IntegerLiteral" flags="ng" index="3Xpsyu">
         <property id="680781990145261275" name="value" index="3Xpu57" />
@@ -226,13 +232,40 @@
         <node concept="2mqjkq" id="4ajheudMYyu" role="3f8PxB" />
       </node>
     </node>
-    <node concept="3XpyAx" id="3czVGKcY0sK" role="3XpyAE" />
+    <node concept="3XpyAx" id="4ajheue860q" role="3XpyAE" />
+    <node concept="3XpyAx" id="4ajheue861A" role="3XpyAE" />
     <node concept="3XpzeA" id="4ajheudG1Ci" role="3XpyAE">
       <property role="TrG5h" value="rs" />
       <node concept="2X$XNq" id="4ajheudG1Dr" role="2XBp8P" />
     </node>
-    <node concept="3XpyAx" id="3czVGKcXpnG" role="3XpyAE" />
-    <node concept="3XpyAx" id="3czVGKcXplm" role="3XpyAE" />
+    <node concept="3XpyAx" id="4ajheue9Ie_" role="3XpyAE" />
+    <node concept="3fgFTi" id="4ajheueawKK" role="3XpyAE">
+      <ref role="3czwrv" node="3QagfA0d8uh" resolve="das" />
+      <node concept="2AF6dY" id="4ajheuebivs" role="3fgFS2">
+        <node concept="3Xpsyu" id="4ajheuebiwe" role="JFpzF">
+          <property role="3Xpu57" value="6" />
+        </node>
+        <node concept="2XHFXr" id="4ajheueawML" role="JFpzD">
+          <ref role="2XHFXq" node="3QagfA0d8uh" resolve="das" />
+        </node>
+      </node>
+      <node concept="JFtB4" id="4ajheueawOz" role="3fgFSf">
+        <node concept="3Xpsyu" id="4ajheueawOK" role="JFpzF">
+          <property role="3Xpu57" value="1" />
+        </node>
+        <node concept="2XHFXr" id="4ajheueawO3" role="JFpzD">
+          <ref role="2XHFXq" node="3QagfA0d8uh" resolve="das" />
+        </node>
+      </node>
+      <node concept="JFtB4" id="4ajheueawPY" role="3fgFSb">
+        <node concept="3Xpsyu" id="4ajheueawQb" role="JFpzF">
+          <property role="3Xpu57" value="1" />
+        </node>
+        <node concept="2XHFXr" id="4ajheueawPp" role="JFpzD">
+          <ref role="2XHFXq" node="3QagfA0d8uh" resolve="das" />
+        </node>
+      </node>
+    </node>
     <node concept="3XpyAx" id="3czVGKcXpm7" role="3XpyAE" />
     <node concept="3XpzeA" id="3QagfA0d8v_" role="3XpyAE">
       <property role="TrG5h" value="ssadsadsadsad23" />
@@ -287,12 +320,6 @@
       </node>
     </node>
     <node concept="3XpyAx" id="3HH4bfMAzLD" role="3XpyAE" />
-    <node concept="2AF6dL" id="56MAyBR8n3R" role="3XpyAE">
-      <node concept="3Xpsyu" id="56MAyBR8n4Q" role="JFpzD">
-        <property role="3Xpu57" value="4" />
-      </node>
-      <node concept="2mqjkq" id="56MAyBR8n5l" role="JFpzF" />
-    </node>
     <node concept="3XpyAx" id="56MAyBR50QU" role="3XpyAE" />
     <node concept="3XpyAx" id="56MAyBR50PR" role="3XpyAE" />
     <node concept="3XpyAx" id="56MAyBR50Pf" role="3XpyAE" />

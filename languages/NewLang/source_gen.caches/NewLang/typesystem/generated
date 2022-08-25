@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="61xddc4a0pf89sfy2ol5rv3ubxt1bje">
-  <files names="TypesystemDescriptor.java:typeof_BinaryComparisonExpression_InferenceRule.java:typeof_BooleanLiteral_InferenceRule.java:typeof_DivExpression_InferenceRule.java:typeof_FunctionCall_InferenceRule.java:typeof_IntegerLiteral_InferenceRule.java:typeof_MinusExpression_InferenceRule.java:typeof_MulExpression_InferenceRule.java:typeof_NewFunction_InferenceRule.java:typeof_PlusExpression_InferenceRule.java:typeof_VariableReference_InferenceRule.java:typeof_Variable_InferenceRule.java" />
+<product version="3" modelHash="duyby4dkk26vtft1otmth240xog70e6">
+  <files names="TypesystemDescriptor.java:typeof_BinaryComparisonExpression_InferenceRule.java:typeof_BooleanLiteral_InferenceRule.java:typeof_DivExpression_InferenceRule.java:typeof_ForLoop_InferenceRule.java:typeof_FunctionCall_InferenceRule.java:typeof_IntegerLiteral_InferenceRule.java:typeof_MinusExpression_InferenceRule.java:typeof_MulExpression_InferenceRule.java:typeof_NewFunction_InferenceRule.java:typeof_PlusExpression_InferenceRule.java:typeof_VariableReference_InferenceRule.java:typeof_Variable_InferenceRule.java" />
 </product>
 

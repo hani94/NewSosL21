@@ -84,6 +84,7 @@ public final class StatementContainer__BehaviorDescriptor extends BaseBHDescript
       return new HidingByNameScope(CONCEPTS.NewFunction$Vh, kind, vars, ScopeUtils.lazyParentScope(__thisNode__, kind));
     }
 
+
     return ((Scope) ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QFgX.invoke0(__thisNode__, CONCEPTS.ScopeProvider$aq, kind, link, ((int) index)));
   }
 
