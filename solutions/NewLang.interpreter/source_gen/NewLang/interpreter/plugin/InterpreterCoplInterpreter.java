@@ -12,8 +12,8 @@ import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import NewLang.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import NewLang.behavior.Expression__BehaviorDescriptor;
 import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
@@ -36,6 +36,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) + (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -65,6 +73,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) - (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -94,6 +110,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) / (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -123,6 +147,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) * (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -152,7 +184,15 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) != (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.IntegerLiteral$5_)) {
+
+            return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) != (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
+          }
+          return (boolean) Expression__BehaviorDescriptor.BooleanValue_id731WjNBenk6.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) != (boolean) Expression__BehaviorDescriptor.BooleanValue_id731WjNBenk6.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -181,6 +221,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) < (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -210,6 +258,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) <= (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -239,7 +295,15 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) == (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.IntegerLiteral$5_)) {
+
+            return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) == (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
+          }
+          return (boolean) Expression__BehaviorDescriptor.BooleanValue_id731WjNBenk6.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) == (boolean) Expression__BehaviorDescriptor.BooleanValue_id731WjNBenk6.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -268,6 +332,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) > (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -297,6 +369,14 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.VariableReference$6C) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.right$VSMB), CONCEPTS.VariableReference$6C)) {
+
+            return "Variable Reference is not allowed";
+          }
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, LINKS.left$VSk_), CONCEPTS.BooleanLiteral$fl)) {
+
+            return "This operation is not suited for Booleans";
+          }
           return (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.left$VSk_)) >= (int) Expression__BehaviorDescriptor.IntValue_id2K_E7Ic1fcQ.invoke(SLinkOperations.getTarget(node, LINKS.right$VSMB));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -337,10 +417,13 @@ public class InterpreterCoplInterpreter extends InterpreterBase {
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept VariableReference$6C = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x3d8a40f9803cffa2L, "NewLang.structure.VariableReference");
+    /*package*/ static final SConcept BooleanLiteral$fl = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0xe7bf19b9812c481L, "NewLang.structure.BooleanLiteral");
     /*package*/ static final SConcept PlusExpression$SW = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417da21L, "NewLang.structure.PlusExpression");
     /*package*/ static final SConcept MinusExpression$G2 = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417e568L, "NewLang.structure.MinusExpression");
     /*package*/ static final SConcept DivExpression$2u = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e5041803c2L, "NewLang.structure.DivExpression");
     /*package*/ static final SConcept MulExpression$D1 = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417f990L, "NewLang.structure.MulExpression");
+    /*package*/ static final SConcept IntegerLiteral$5_ = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x9729f9cf4175702L, "NewLang.structure.IntegerLiteral");
     /*package*/ static final SConcept NotEqualExpression$Wh = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef95aL, "NewLang.structure.NotEqualExpression");
     /*package*/ static final SConcept LowerToExpression$KD = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef957L, "NewLang.structure.LowerToExpression");
     /*package*/ static final SConcept LowerEqualExpression$LB = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x51b29a29f71ef959L, "NewLang.structure.LowerEqualExpression");

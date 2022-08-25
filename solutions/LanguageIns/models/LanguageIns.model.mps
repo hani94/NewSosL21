@@ -38,12 +38,18 @@
       <concept id="4434428223442190242" name="NewLang.structure.VariableReference" flags="ng" index="2XHFXr">
         <reference id="4434428223442190243" name="var" index="2XHFXq" />
       </concept>
+      <concept id="3685051480276572303" name="NewLang.structure.NewFunction" flags="ng" index="ZMBp3">
+        <child id="3685051480276572559" name="parameters" index="ZMBt3" />
+        <child id="3685051480276572568" name="returnValue" index="ZMBtk" />
+        <child id="3685051480276572564" name="returnType" index="ZMBto" />
+      </concept>
       <concept id="1623200333230738446" name="NewLang.structure.Main" flags="ng" index="1b1kwk">
         <child id="680781990145078838" name="content" index="3XpyAE" />
       </concept>
       <concept id="680781990145251074" name="NewLang.structure.IntegerLiteral" flags="ng" index="3Xpsyu">
         <property id="680781990145261275" name="value" index="3Xpu57" />
       </concept>
+      <concept id="680781990145078845" name="NewLang.structure.EmptyStatement" flags="ng" index="3XpyAx" />
       <concept id="680781990145076282" name="NewLang.structure.Variable" flags="ng" index="3XpzeA">
         <child id="4434428223439753932" name="type" index="2XBp8P" />
         <child id="680781990145263827" name="value" index="3Xphtf" />
@@ -152,7 +158,7 @@
       <property role="TrG5h" value="Variable1" />
       <node concept="2X$XNr" id="731WjNBaQvE" role="2XBp8P" />
       <node concept="3Xpsyu" id="731WjNBaQw3" role="3Xphtf">
-        <property role="3Xpu57" value="10" />
+        <property role="3Xpu57" value="6" />
       </node>
     </node>
     <node concept="3XpzeA" id="731WjNBaQxh" role="3XpyAE">
@@ -181,12 +187,34 @@
         <ref role="2XHFXq" node="731WjNBaQvz" resolve="Variable1" />
       </node>
     </node>
-    <node concept="2AF6dN" id="731WjNBd8wu" role="3XpyAE">
+    <node concept="2AF6dN" id="731WjNBh$R$" role="3XpyAE">
+      <node concept="3Xpsyu" id="731WjNBd8w7" role="JFpzD">
+        <property role="3Xpu57" value="5" />
+      </node>
       <node concept="3Xpsyu" id="731WjNBddPW" role="JFpzF">
         <property role="3Xpu57" value="6" />
       </node>
-      <node concept="3Xpsyu" id="731WjNBd8w7" role="JFpzD">
-        <property role="3Xpu57" value="5" />
+    </node>
+    <node concept="2AF6dN" id="731WjNBh$TI" role="3XpyAE">
+      <node concept="2XHFXr" id="731WjNBh$Uo" role="JFpzF">
+        <ref role="2XHFXq" node="731WjNBaQvz" resolve="Variable1" />
+      </node>
+      <node concept="3Xpsyu" id="731WjNBh$Te" role="JFpzD">
+        <property role="3Xpu57" value="6" />
+      </node>
+    </node>
+    <node concept="2AF6dN" id="731WjNBhLDS" role="3XpyAE">
+      <node concept="3Xpsyu" id="731WjNBhLEX" role="JFpzF">
+        <property role="3Xpu57" value="6" />
+      </node>
+      <node concept="2XHFXr" id="731WjNBhLDl" role="JFpzD">
+        <ref role="2XHFXq" node="731WjNBaQvz" resolve="Variable1" />
+      </node>
+    </node>
+    <node concept="2AF6dW" id="731WjNBiXB4" role="3XpyAE">
+      <node concept="2mqjkq" id="731WjNBiXC6" role="JFpzF" />
+      <node concept="2mqjkq" id="731WjNBiX$8" role="JFpzD">
+        <property role="2mqjkp" value="true" />
       </node>
     </node>
     <node concept="2AF6dW" id="731WjNBefAZ" role="3XpyAE">
@@ -221,6 +249,43 @@
           <property role="3Xpu57" value="1" />
         </node>
       </node>
+      <node concept="JFuqd" id="731WjNBgIaP" role="2XJHFk">
+        <node concept="3Xpsyu" id="731WjNBgIbl" role="JFpzF">
+          <property role="3Xpu57" value="4" />
+        </node>
+        <node concept="3Xpsyu" id="731WjNBgIax" role="JFpzD">
+          <property role="3Xpu57" value="1" />
+        </node>
+      </node>
+      <node concept="JFuqd" id="731WjNBgIcf" role="2XJHFk">
+        <node concept="3Xpsyu" id="731WjNBgIcM" role="JFpzF">
+          <property role="3Xpu57" value="7" />
+        </node>
+        <node concept="3Xpsyu" id="731WjNBgIbS" role="JFpzD">
+          <property role="3Xpu57" value="3" />
+        </node>
+      </node>
+      <node concept="3XpyAx" id="731WjNBgIad" role="2XJHFk" />
+      <node concept="ZMBp3" id="731WjNBgIdu" role="2XJHFk">
+        <property role="TrG5h" value="add" />
+        <node concept="2X$XNr" id="731WjNBgIeS" role="ZMBto" />
+        <node concept="JFtB4" id="731WjNBgIfh" role="ZMBtk">
+          <node concept="3Xpsyu" id="731WjNBgIfB" role="JFpzF">
+            <property role="3Xpu57" value="1" />
+          </node>
+          <node concept="3Xpsyu" id="731WjNBgIf5" role="JFpzD">
+            <property role="3Xpu57" value="1" />
+          </node>
+        </node>
+        <node concept="3XpzeA" id="731WjNBgIe8" role="ZMBt3">
+          <property role="TrG5h" value="v1" />
+          <node concept="2X$XNr" id="731WjNBgIep" role="2XBp8P" />
+        </node>
+        <node concept="3XpzeA" id="731WjNBgIev" role="ZMBt3">
+          <property role="TrG5h" value="v2" />
+          <node concept="2X$XNr" id="731WjNBgIeJ" role="2XBp8P" />
+        </node>
+      </node>
       <node concept="2XGCgf" id="5zZpef9G6De" role="2XJHFk">
         <node concept="2AF6dW" id="5zZpef9G6Fr" role="2XGCg0">
           <node concept="JFtB4" id="5zZpef9G6Fs" role="JFpzD">
@@ -228,14 +293,15 @@
               <property role="3Xpu57" value="1" />
             </node>
             <node concept="3Xpsyu" id="5zZpef9G6F3" role="JFpzF">
-              <property role="3Xpu57" value="3" />
+              <property role="3Xpu57" value="1" />
             </node>
           </node>
-          <node concept="3Xpsyu" id="5zZpef9G6FS" role="JFpzF">
-            <property role="3Xpu57" value="4" />
+          <node concept="3Xpsyu" id="731WjNBgIgz" role="JFpzF">
+            <property role="3Xpu57" value="2" />
           </node>
         </node>
       </node>
+      <node concept="3XpyAx" id="731WjNBgIgS" role="2XJHFk" />
     </node>
   </node>
 </model>
