@@ -5,6 +5,8 @@
       <modulePath path="$PROJECT_DIR$/languages/NewLang/NewLang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/TestLanguage/TestLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LanguageIns/LanguageIns.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/NewLang.interpreter/NewLang.interpreter.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestLanguage.interpreter/TestLanguage.interpreter.msd" folder="" />
     </projectModules>
   </component>
 </project>

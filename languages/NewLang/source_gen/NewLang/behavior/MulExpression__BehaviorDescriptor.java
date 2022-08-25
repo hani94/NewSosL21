@@ -21,14 +21,22 @@ public final class MulExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x82c3f21d731742c2L, 0xa9382fa615afecaaL, 0x2bba03e50417f990L, "NewLang.structure.MulExpression");
 
   public static final SMethod<Integer> priority_idTVWpIo3c8y = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("priority").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).id("TVWpIo3c8y").build();
+  public static final SMethod<Boolean> BooleanValue_id731WjNBenk6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("BooleanValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("731WjNBenk6").build();
+  public static final SMethod<Integer> IntValue_id2K_E7Ic1fcQ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2K_E7Ic1fcQ").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_idTVWpIo3c8y);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_idTVWpIo3c8y, BooleanValue_id731WjNBenk6, IntValue_id2K_E7Ic1fcQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static int priority_idTVWpIo3c8y(@NotNull SAbstractConcept __thisConcept__) {
     return 1;
+  }
+  /*package*/ static boolean BooleanValue_id731WjNBenk6(@NotNull SNode __thisNode__) {
+    return false;
+  }
+  /*package*/ static int IntValue_id2K_E7Ic1fcQ(@NotNull SNode __thisNode__) {
+    return 0;
   }
 
   /*package*/ MulExpression__BehaviorDescriptor() {
@@ -46,6 +54,10 @@ public final class MulExpression__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 1:
+        return (T) ((Boolean) BooleanValue_id731WjNBenk6(node));
+      case 2:
+        return (T) ((Integer) IntValue_id2K_E7Ic1fcQ(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="rdyhhq1w9217glu6lfd7i84ai40dyp">
-  <files names="BehaviorAspectDescriptor.java:BinaryExpression__BehaviorDescriptor.java:DivExpression__BehaviorDescriptor.java:IfStatement__BehaviorDescriptor.java:Main__BehaviorDescriptor.java:MinusExpression__BehaviorDescriptor.java:MulExpression__BehaviorDescriptor.java:PlusExpression__BehaviorDescriptor.java:StatementContainer__BehaviorDescriptor.java" />
+<product version="3" modelHash="9zxbxfx9x7rynm8za60180xrti9ce92">
+  <files names="BehaviorAspectDescriptor.java:BinaryExpression__BehaviorDescriptor.java:BooleanLiteral__BehaviorDescriptor.java:DivExpression__BehaviorDescriptor.java:EqualExpression__BehaviorDescriptor.java:Expression__BehaviorDescriptor.java:GreaterEqualExpression__BehaviorDescriptor.java:GreaterThanExpression__BehaviorDescriptor.java:IfStatement__BehaviorDescriptor.java:IntegerLiteral__BehaviorDescriptor.java:LowerEqualExpression__BehaviorDescriptor.java:LowerToExpression__BehaviorDescriptor.java:Main__BehaviorDescriptor.java:MinusExpression__BehaviorDescriptor.java:MulExpression__BehaviorDescriptor.java:NotEqualExpression__BehaviorDescriptor.java:PlusExpression__BehaviorDescriptor.java:StatementContainer__BehaviorDescriptor.java:VariableReference__BehaviorDescriptor.java" />
 </product>
 
